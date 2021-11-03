@@ -1,0 +1,41 @@
+# SwiftDebugging
+
+# 1. BASICS AND READING VALUES
+        
+- Use assertion() EVERYWHERE, use precondition when necessary and fatalError() when the error can carry data corruption, for example
+
+assert()                YES     NO (needs parameters that return true/false)
+assertionFailure()      YES     NO (doesn't needs parameters)
+precondition()          YES     YES (needs parameters that return true/false)
+preconditionFailure()   YES     YES (doesn't needs parameters)
+fatalError()           YES     YES (doesn't needs parameters)
+        
+- lldb => low level debugger
+commands:
+-- p 7 => prints 7 on console (returns the value of a variable/method of our code)
+-- po someObject => prints the memory address of someObject on console i.e. <App.ExampleObj: 0x7ff4f0014260>
+-- p someObject => prints the memory address and its properties' values i.e. <App.ExampleObj: 0x7ff4f0014260> { username = "Gibbs" favoriteSongs = 25 values { [0] = "So What" } }
+         
+This can carry some issues because when calling [whatever] can change some values, so it'd be better in some cases to use frame variable: "Shows us the value of this local variable without changing anything"
+         
+fr v username => (String) username = "twostraws"
+expr => "Change this variable to something else"
+        
+# 2. BREAKPOINTS AND WATCHPOINTS
+        
+For a better control of breakpoints, double click on them and set conditions to them. We can set how many times we want to ignore the trigger event of the breakpoint or even tell Xcode to decide whether to trigger the breakpoint or not. We can add actions. For example, we set the action as "Debugger Command" and then we type "p username". That means when the event is triggered, the console will show the value of username. We can add multiple actions.
+         
+A must for a large app is to add a general breakpoint by going to the breakpoints menu and then clicking on the add button > Exception breakpoint...
+That will go to the problematic line and set the debugger automatically. If the error arises, then we should type on console: "po $arg1" and then add that line as an action in the breakpoint that we created.
+                  
+- A WATCHPOINT paused when a value is changed by any part of the code vs a breakpoint pasuses when a location is reached or when an event happens.
+A watchpoint can be set when entering a breakpoint, then right click on a value and then select "Watch "nameOfVar""
+
+# 3. LAYOUTS
+
+We should put identifiers to our views to be able to know from text what view is the console referencing to.
+Don't forget to use the visual debugger. Watch a video for more info about it.
+
+# FOR MORE INFO
+hackingwithswift.com/100/64
+appdevcon.nl/session/how-to-debug-like-a-pro/ (taken from the 65th day Swift course)
