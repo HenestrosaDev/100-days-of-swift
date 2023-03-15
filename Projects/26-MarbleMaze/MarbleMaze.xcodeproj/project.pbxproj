@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA24B90926FB7D59004576F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B90826FB7D59004576F8 /* AppDelegate.swift */; };
+		FA24B90B26FB7D59004576F8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA24B90A26FB7D59004576F8 /* GameScene.sks */; };
+		FA24B90F26FB7D59004576F8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B90E26FB7D59004576F8 /* GameScene.swift */; };
+		FA24B91126FB7D59004576F8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B91026FB7D59004576F8 /* GameViewController.swift */; };
+		FA24B91426FB7D59004576F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA24B91226FB7D59004576F8 /* Main.storyboard */; };
+		FA24B91626FB7D5A004576F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA24B91526FB7D5A004576F8 /* Assets.xcassets */; };
+		FA24B91E26FB7F20004576F8 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA24B91D26FB7F20004576F8 /* level1.txt */; };
+		FA24B92026FB853E004576F8 /* CollisionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B91F26FB853E004576F8 /* CollisionTypes.swift */; };
+		FA40F54329C0D33C008A38CB /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA40F54229C0D33C008A38CB /* level2.txt */; };
+		FA40F54529C1EA5F008A38CB /* level4.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA40F54429C1EA5F008A38CB /* level4.txt */; };
+		FA40F54729C1ED88008A38CB /* level3.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA40F54629C1ED88008A38CB /* level3.txt */; };
+		FA40F54929C1F8A1008A38CB /* level5.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA40F54829C1F8A1008A38CB /* level5.txt */; };
+		FA5BCDD526FCC55A00992A81 /* NodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BCDD426FCC55A00992A81 /* NodeGenerator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA24B90526FB7D59004576F8 /* MarbleMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarbleMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA24B90826FB7D59004576F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA24B90A26FB7D59004576F8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FA24B90E26FB7D59004576F8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FA24B91026FB7D59004576F8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FA24B91326FB7D59004576F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA24B91526FB7D5A004576F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA24B91726FB7D5A004576F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA24B91D26FB7F20004576F8 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		FA24B91F26FB853E004576F8 /* CollisionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionTypes.swift; sourceTree = "<group>"; };
+		FA40F54229C0D33C008A38CB /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
+		FA40F54429C1EA5F008A38CB /* level4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level4.txt; sourceTree = "<group>"; };
+		FA40F54629C1ED88008A38CB /* level3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level3.txt; sourceTree = "<group>"; };
+		FA40F54829C1F8A1008A38CB /* level5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level5.txt; sourceTree = "<group>"; };
+		FA5BCDD426FCC55A00992A81 /* NodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeGenerator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA24B90226FB7D59004576F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA24B8FC26FB7D59004576F8 = {
+			isa = PBXGroup;
+			children = (
+				FA24B90726FB7D59004576F8 /* MarbleMaze */,
+				FA24B90626FB7D59004576F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA24B90626FB7D59004576F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA24B90526FB7D59004576F8 /* MarbleMaze.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA24B90726FB7D59004576F8 /* MarbleMaze */ = {
+			isa = PBXGroup;
+			children = (
+				FA40F54129C0C194008A38CB /* Levels */,
+				FA24B90826FB7D59004576F8 /* AppDelegate.swift */,
+				FA24B90A26FB7D59004576F8 /* GameScene.sks */,
+				FA24B90E26FB7D59004576F8 /* GameScene.swift */,
+				FA24B91026FB7D59004576F8 /* GameViewController.swift */,
+				FA24B91226FB7D59004576F8 /* Main.storyboard */,
+				FA24B91526FB7D5A004576F8 /* Assets.xcassets */,
+				FA24B91726FB7D5A004576F8 /* Info.plist */,
+				FA24B91F26FB853E004576F8 /* CollisionTypes.swift */,
+				FA5BCDD426FCC55A00992A81 /* NodeGenerator.swift */,
+			);
+			path = MarbleMaze;
+			sourceTree = "<group>";
+		};
+		FA40F54129C0C194008A38CB /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				FA24B91D26FB7F20004576F8 /* level1.txt */,
+				FA40F54229C0D33C008A38CB /* level2.txt */,
+				FA40F54429C1EA5F008A38CB /* level4.txt */,
+				FA40F54629C1ED88008A38CB /* level3.txt */,
+				FA40F54829C1F8A1008A38CB /* level5.txt */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA24B90426FB7D59004576F8 /* MarbleMaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA24B91A26FB7D5A004576F8 /* Build configuration list for PBXNativeTarget "MarbleMaze" */;
+			buildPhases = (
+				FA24B90126FB7D59004576F8 /* Sources */,
+				FA24B90226FB7D59004576F8 /* Frameworks */,
+				FA24B90326FB7D59004576F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarbleMaze;
+			productName = MarbleMaze;
+			productReference = FA24B90526FB7D59004576F8 /* MarbleMaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA24B8FD26FB7D59004576F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FA24B90426FB7D59004576F8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = FA24B90026FB7D59004576F8 /* Build configuration list for PBXProject "MarbleMaze" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA24B8FC26FB7D59004576F8;
+			productRefGroup = FA24B90626FB7D59004576F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA24B90426FB7D59004576F8 /* MarbleMaze */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA24B90326FB7D59004576F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA40F54329C0D33C008A38CB /* level2.txt in Resources */,
+				FA40F54529C1EA5F008A38CB /* level4.txt in Resources */,
+				FA24B91426FB7D59004576F8 /* Main.storyboard in Resources */,
+				FA24B91E26FB7F20004576F8 /* level1.txt in Resources */,
+				FA24B90B26FB7D59004576F8 /* GameScene.sks in Resources */,
+				FA40F54929C1F8A1008A38CB /* level5.txt in Resources */,
+				FA24B91626FB7D5A004576F8 /* Assets.xcassets in Resources */,
+				FA40F54729C1ED88008A38CB /* level3.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA24B90126FB7D59004576F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA24B92026FB853E004576F8 /* CollisionTypes.swift in Sources */,
+				FA5BCDD526FCC55A00992A81 /* NodeGenerator.swift in Sources */,
+				FA24B90F26FB7D59004576F8 /* GameScene.swift in Sources */,
+				FA24B91126FB7D59004576F8 /* GameViewController.swift in Sources */,
+				FA24B90926FB7D59004576F8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA24B91226FB7D59004576F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA24B91326FB7D59004576F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA24B91826FB7D5A004576F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA24B91926FB7D5A004576F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA24B91B26FB7D5A004576F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarbleMaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josecarloslh.MarbleMaze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FA24B91C26FB7D5A004576F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarbleMaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josecarloslh.MarbleMaze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA24B90026FB7D59004576F8 /* Build configuration list for PBXProject "MarbleMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA24B91826FB7D5A004576F8 /* Debug */,
+				FA24B91926FB7D5A004576F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA24B91A26FB7D5A004576F8 /* Build configuration list for PBXNativeTarget "MarbleMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA24B91B26FB7D5A004576F8 /* Debug */,
+				FA24B91C26FB7D5A004576F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA24B8FD26FB7D59004576F8 /* Project object */;
+}
