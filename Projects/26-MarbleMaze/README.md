@@ -26,6 +26,13 @@ Taken from [here](https://www.hackingwithswift.com/read/25/5):
 >- [x] When the player finally makes it to the finish marker, nothing happens. What should happen? Well, that's down to you now. You could easily design several new levels and have them progress through.
 >- [x] Add a new block type, such as a teleport that moves the player from one teleport point to the other. Add a new letter type in `loadLevel()`, add another collision type to our enum, then see what you can do.
 
+## To do as a personal challenge...
+
+- [ ] Add a menu
+- [ ] Add even more levels
+- [ ] Save score to `UserDefaults`
+- [ ] Make an Android version
+
 ## Screenshots
 
 ![Level 1](./Screenshots/1.png)
