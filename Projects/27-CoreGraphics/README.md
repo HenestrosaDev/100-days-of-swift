@@ -18,8 +18,6 @@
 
 Taken from [here](https://www.hackingwithswift.com/read/27/7):
 
-**Note**: I have taken [this repository](https://github.com/clarknt/100-days-of-swift/blob/main/34-Project26/README.md) by GitHub user [clarknt](https://github.com/clarknt) as a reference to complete the 3rd challenge.
-
 >- [x] Pick any emoji and try creating it using Core Graphics. You should find some easy enough, but for a harder challenge you could also try something like the star emoji.
 >- [x] Use a combination of `move(to:)` and `addLine(to:)` to create and stroke a path that spells **TWIN** on the canvas.
 >- [x] Go back to [project 3](https://github.com/HenestrosaConH/100-days-of-swift/tree/main/Courses/03-SocialMedia) and change the way the selected image is shared so that it has some rendered text on top saying “From Storm Viewer”. This means reading the `size` property of the original image, creating a new canvas at that size, drawing the image in, then adding your text on top.
