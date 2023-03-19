@@ -13,6 +13,9 @@
 		FABE9EE629C63FD9003D58A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE9EE429C63FD9003D58A9 /* Main.storyboard */; };
 		FABE9EE829C63FDB003D58A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABE9EE729C63FDB003D58A9 /* Assets.xcassets */; };
 		FABE9EEB29C63FDB003D58A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE9EE929C63FDB003D58A9 /* LaunchScreen.storyboard */; };
+		FABE9EF429C64953003D58A9 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9EF329C64953003D58A9 /* KeychainItemAccessibility.swift */; };
+		FABE9EF629C64959003D58A9 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9EF529C64959003D58A9 /* KeychainWrapper.swift */; };
+		FABE9EF829C64B1A003D58A9 /* KeychainKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9EF729C64B1A003D58A9 /* KeychainKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		FABE9EE729C63FDB003D58A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABE9EEA29C63FDB003D58A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABE9EEC29C63FDB003D58A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABE9EF329C64953003D58A9 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		FABE9EF529C64959003D58A9 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		FABE9EF729C64B1A003D58A9 /* KeychainKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		FABE9EDD29C63FD9003D58A9 /* SecretSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FABE9EF229C6493A003D58A9 /* KeychainWrapper */,
 				FABE9EDE29C63FD9003D58A9 /* AppDelegate.swift */,
 				FABE9EE029C63FD9003D58A9 /* SceneDelegate.swift */,
 				FABE9EE229C63FD9003D58A9 /* ViewController.swift */,
@@ -65,6 +72,16 @@
 				FABE9EEC29C63FDB003D58A9 /* Info.plist */,
 			);
 			path = SecretSwift;
+			sourceTree = "<group>";
+		};
+		FABE9EF229C6493A003D58A9 /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				FABE9EF529C64959003D58A9 /* KeychainWrapper.swift */,
+				FABE9EF329C64953003D58A9 /* KeychainItemAccessibility.swift */,
+				FABE9EF729C64B1A003D58A9 /* KeychainKeys.swift */,
+			);
+			path = KeychainWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABE9EE329C63FD9003D58A9 /* ViewController.swift in Sources */,
+				FABE9EF429C64953003D58A9 /* KeychainItemAccessibility.swift in Sources */,
 				FABE9EDF29C63FD9003D58A9 /* AppDelegate.swift in Sources */,
+				FABE9EF829C64B1A003D58A9 /* KeychainKeys.swift in Sources */,
 				FABE9EE129C63FD9003D58A9 /* SceneDelegate.swift in Sources */,
+				FABE9EF629C64959003D58A9 /* KeychainWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
