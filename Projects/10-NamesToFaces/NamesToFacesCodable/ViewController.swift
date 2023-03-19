@@ -6,36 +6,33 @@
 //
 
 import UIKit
+import LocalAuthentication
 
-// UIImagePickerControllerDelegate tells us when the user chooses an image or cancels the picker
 /**
  UINavigationControllerDelegate is needed because of the delegate above. This one has two optional
  methods to implement which are not necessary in this case.
  */
-class ViewController: UICollectionViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class ViewController: UICollectionViewController, UINavigationControllerDelegate {
+    
+    // MARK: Properties
     
     var people = [Person]()
 
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .add,
+        // Day 93 challenge
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Unlock",
+            style: .plain,
             target: self,
-            action: #selector(addNewPerson)
+            action: #selector(insertBiometricAuthentication)
         )
-        
-        let defaults = UserDefaults.standard
-        if let savedPeople = defaults.object(forKey: "people") as? Data {
-            let jsonDecoder = JSONDecoder()
-            
-            do {
-                people = try jsonDecoder.decode([Person].self, from: savedPeople)
-            } catch {
-                print("Failed to load people.")
-            }
-        }
     }
+    
+    // MARK: - Overriden Methods
     
     override func collectionView(
         _ collectionView: UICollectionView,
@@ -49,7 +46,9 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         // Returns a general table view cell, so we need to typecast it
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Person", for: indexPath) as? PersonCell else {
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "Person", for: indexPath
+        ) as? PersonCell else {
             fatalError("Unable to dequeue PersonCell")
         }
         
@@ -75,7 +74,72 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         showOptions(person: people[indexPath.item], indexPath: indexPath)
     }
 
-    func showOptions(person: Person, indexPath: IndexPath) {
+    // MARK: - Private Methods
+    
+    // Day 93 challenge
+    private func unlockApp() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .add,
+            target: self,
+            action: #selector(addNewPerson)
+        )
+        navigationItem.rightBarButtonItem = nil
+        
+        loadImages()
+    }
+    
+    private func loadImages() {
+        let defaults = UserDefaults.standard
+        if let savedPeople = defaults.object(forKey: "people") as? Data {
+            let jsonDecoder = JSONDecoder()
+            
+            do {
+                people = try jsonDecoder.decode([Person].self, from: savedPeople)
+            } catch {
+                print("Failed to load people.")
+            }
+        }
+        
+        collectionView.reloadData()
+    }
+    
+    // Day 93 challenge
+    @objc private func insertBiometricAuthentication() {
+        let context = LAContext()
+        var error: NSError?
+        
+        /**
+         &error => LocalAuthentication framework uses Objective-C (that's why the type of the
+         error variable is NSError). We pass the error argument as a reference to our error
+         variable, which then changes its value inside the canEvaluatePolicy() method. It's similar
+         to inout parameters in Swift.
+         */
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "To access sensible content, you must identify yourself"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
+                [weak self] success, authenticationError in
+                
+                guard let self = self else { return }
+                
+                DispatchQueue.main.async {
+                    if success {
+                        self.unlockApp()
+                    }
+                }
+            }
+        } else {
+            let ac = UIAlertController(
+                title: "Biometry unavailable",
+                message: "Your device is not configured for biometric authentication",
+                preferredStyle: .alert
+            )
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
+    }
+    
+    private func showOptions(person: Person, indexPath: IndexPath) {
         let alertController = UIAlertController(
             title: person.name,
             message: nil,
@@ -114,7 +178,7 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         present(alertController, animated: true)
     }
     
-    @objc func addNewPerson() {
+    @objc private func addNewPerson() {
         let picker = UIImagePickerController()
         
         // Allows you to crop the image when selecting it, among other things
@@ -130,6 +194,28 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         present(picker, animated: true)
     }
 
+    private func getDocumentsDirectory() -> URL {
+        // in: adds that we want the path to be relative to the user's home directory
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+    private func save() {
+        let jsonEncoder = JSONEncoder()
+        
+        if let savedData = try? jsonEncoder.encode(people) {
+            let defaults = UserDefaults.standard
+            defaults.set(savedData, forKey: "people")
+        } else {
+            fatalError("Encoding error")
+        }
+    }
+    
+}
+
+// UIImagePickerControllerDelegate tells us when the user chooses an image or cancels the picker
+extension ViewController: UIImagePickerControllerDelegate {
+    
     /**
      Returns when the user selected an image and it's being returned to you. This method needs to
      do several things:
@@ -168,23 +254,6 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         collectionView.reloadData()
         
         dismiss(animated: true)
-    }
-    
-    func getDocumentsDirectory() -> URL {
-        // in: adds that we want the path to be relative to the user's home directory
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-    
-    func save() {
-        let jsonEncoder = JSONEncoder()
-        
-        if let savedData = try? jsonEncoder.encode(people) {
-            let defaults = UserDefaults.standard
-            defaults.set(savedData, forKey: "people")
-        } else {
-            fatalError("Encoding error")
-        }
     }
     
 }

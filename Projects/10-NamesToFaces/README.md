@@ -25,8 +25,10 @@ Taken from [here](https://www.hackingwithswift.com/read/10/7/wrap-up):
 >- [x] Add a second `UIAlertController` that gets shown when the user taps a picture, asking them whether they want to rename the person or delete them.
 >- [x] Try using `picker.sourceType = .camera` when creating your image picker, which will tell it to create a new image by taking a photo. This is only available on devices (not on the simulator) so you might want to check the return value of `UIImagePickerController.isSourceTypeAvailable()` before trying to use it!
 >- [ ] Modify [project 1](https://github.com/HenestrosaConH/100-days-of-swift/tree/main/Courses/01-StormViewer) so that it uses a collection view controller rather than a table view controller. I recommend you keep a copy of your original table view controller code so you can refer back to it later on.
+>- [x] ([Day 93](https://www.hackingwithswift.com/read/28/5/wrap-up)) Go back to project 10 and add biometric authentication so the user’s pictures are shown only when they have unlocked the app. You’ll need to give some thought to how you can hide the pictures – perhaps leave the array empty until they are authenticated?
 
 ## Screenshots
 
 ![Most recent screen](./Screenshots/1.png)
 ![Top rated screen](./Screenshots/2.png)
+![Day 93 challenge](./Screenshots/3.png)
