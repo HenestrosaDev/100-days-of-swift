@@ -1,6 +1,6 @@
 # Core Graphics
 
-[Project 27](https://www.hackingwithswift.com/read/25/overview) from the [100 Days of Swift course](https://www.hackingwithswift.com/100) by [Hacking With Swift](https://www.hackingwithswift.com/).
+[Project 27](https://www.hackingwithswift.com/read/27/overview) from the [100 Days of Swift course](https://www.hackingwithswift.com/100) by [Hacking With Swift](https://www.hackingwithswift.com/).
 
 ## Contents
 

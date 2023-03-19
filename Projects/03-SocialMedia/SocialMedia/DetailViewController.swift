@@ -57,14 +57,37 @@ class DetailViewController: UIViewController {
      this method written in Swift.
      */
     @objc func shareTapped() {
-        guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else {
+        guard let image = imageView.image/*?.jpegData(compressionQuality: 0.8)*/ else {
             print("No image found")
             return
         }
+        
+        let canvasWidth: CGFloat = image.size.width
+        let canvasHeight: CGFloat = image.size.height
+        
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: canvasWidth, height: canvasHeight))
+        
+        let coreGraphicsImage = renderer.image { ctx in
+            // Draws the image
+            image.draw(at: CGPoint(x: 0, y: 0))
+                        
+            let string = "From Storm Viewer"
+            let attrs: [NSAttributedString.Key : Any] = [.font : UIFont.systemFont(ofSize: 38)]
+            let attributedString = NSAttributedString(string: string, attributes: attrs)
+            
+            attributedString.draw(
+                with: CGRect(x: 28, y: 28, width: canvasWidth, height: canvasHeight),
+                options: .usesLineFragmentOrigin,
+                context: nil
+            )
+        }.jpegData(compressionQuality: 0.8)
 
         // activityItems is the data to be shared. selectedItem! will set the name of the file in the
         // sharing pop up, as requested by the challenge of the instructor.
-        let viewController = UIActivityViewController(activityItems: [image, selectedImage!], applicationActivities: [])
+        let viewController = UIActivityViewController(
+            activityItems: [coreGraphicsImage],
+            applicationActivities: []
+        )
 
         /**
          This line is for iPad, because the activity view controller must be shown from somewhere on

@@ -25,9 +25,11 @@ Taken from [here](https://www.hackingwithswift.com/read/3/3/wrap-up):
 >- [x] Try adding the image name to the list of items that are shared. The `activityItems` parameter is an array, so you can add strings and other things freely. Note: Facebook won’t let you share text, but most other share options will.
 >- [x] Go back to [project 1](https://github.com/HenestrosaConH/100-days-of-swift/tree/main/Courses/01-StormViewer) and add a bar button item to the main view controller that recommends the app to other people.
 >- [x] Go back to [project 2](https://github.com/HenestrosaConH/100-days-of-swift/tree/main/Courses/02-GuessTheFlag) and add a bar button item that shows their score when tapped.
+>- [x] ([Day 89](https://www.hackingwithswift.com/read/27/7/wrap-up)) Go back to project 3 and change the way the selected image is shared so that it has some rendered text on top saying “From Storm Viewer”. This means reading the `size` property of the original image, creating a new canvas at that size, drawing the image in, then adding your text on top.
 
 ## Screenshots
 
 ![Main screen](./Screenshots/1.png)
 ![Picture detail](./Screenshots/2.png)
 ![Share intent](./Screenshots/3.png)
+![Challenge day 89](./Screenshots/4.png)
