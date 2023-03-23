@@ -28,5 +28,7 @@ Taken from [here](https://www.hackingwithswift.com/read/30/7/wrap-up):
 
 ## Screenshots
 
-<img src="./Screenshots/1.png" alt="Main screen" width="49%">
-<img src="./Screenshots/1.png" alt="Detail screen" width="49%">
+<div>
+  <img src="./Screenshots/1.png" alt="Main screen" width="250">
+  <img src="./Screenshots/2.png" alt="Detail screen" width="250">
+</div>
