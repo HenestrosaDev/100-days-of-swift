@@ -9,11 +9,11 @@
 | [57](https://www.hackingwithswift.com/100/57) | <ul><li>[Setting up](https://www.hackingwithswift.com/read/15/1/setting-up)</li><li>[Preparing for action](https://www.hackingwithswift.com/read/15/2)</li><li>[Switch, case, animate: animate(withDuration:)](https://www.hackingwithswift.com/read/15/3)</li><li>[Transform: CGAffineTransform](https://www.hackingwithswift.com/read/15/4)</li></ul> |
 | [58](https://www.hackingwithswift.com/100/58) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/15/5)</li><li>[Review for Project 15: Animation](https://www.hackingwithswift.com/review/hws/project-15-animation)</li></ul>                                                                                                                                                                    | 
 
-## I've learnt...
+## I Have Learnt...
 
-- `animate(withDuration:)`
-- Spring animations
-- `ACGAffineTransform`
+- `animate(withDuration:)`: Class method of the `UIView` class in iOS, which allows you to create and run animations on a view
+- Spring animations: Type of animation in iOS that create a bouncing or spring-like effect in a view as it moves, scales, or rotates. They are designed to provide a more natural, fluid and responsive feel to the animations.
+- The `CGAffineTransform` struct provides several methods to create, manipulate and combine transformation matrices.
 
 ## Challenges
 
@@ -25,4 +25,6 @@ Taken from [here](https://www.hackingwithswift.com/read/15/5):
 
 ## Screenshots
 
-![Main screen](./Screenshots/1.gif)
+<div align="center">
+  <img src="./Screenshots/1.gif" alt="Main screen" width="490">
+</div>

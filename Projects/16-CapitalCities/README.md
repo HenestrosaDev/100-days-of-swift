@@ -9,12 +9,12 @@
 | [60](https://www.hackingwithswift.com/100/60) | <ul><li>[Setting up](https://www.hackingwithswift.com/read/16/1/setting-up)</li><li>[Up and running with MapKit](https://www.hackingwithswift.com/read/16/2)</li><li>[Annotations and accessory views: MKPinAnnotationView](https://www.hackingwithswift.com/read/16/3)</li></ul> |
 | [61](https://www.hackingwithswift.com/100/61) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/16/4)</li><li>[Review for Project 16: Capital Cities](https://www.hackingwithswift.com/review/hws/project-16-capital-cities)</li></ul>                                                                                    |
 
-## I've learnt...
+## I Have Learnt...
 
-- `MKMapView`
-- `MKAnnotation`
-- `MKPinAnnotationView`
-- `CLLocationCoordinate2D`
+- `MKMapView`: Part of the MapKit framework that provides a map interface to display map data from various sources, such as Apple's map service, third-party map services, or custom maps.
+- `MKAnnotation`: A protocol defined in the MapKit framework that defines the properties and methods required to represent an annotation on a map. An annotation is a marker that you can add to a `MKMapView` to provide information about a specific location on the map, such as a point of interest or a user's location.
+- `MKPinAnnotationView`: A subclass of `MKAnnotationView`, which is a generic annotation view that can display any kind of annotation. `MKPinAnnotationView` is designed to look like a standard pin, with a circular head and a long stem. It comes in three colors: red, green, and purple.
+- `CLLocationCoordinate2D`: A struct defined in the Core Location framework. It has two properties: `latitude` and `longitude`. 
 
 ## Challenges
 
@@ -26,5 +26,7 @@ Taken from [here](https://www.hackingwithswift.com/read/16/4):
 
 ## Screenshots
 
-![Main screen](./Screenshots/1.png)
-![Detail screen](./Screenshots/2.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Main screen" width="488">
+  <img src="./Screenshots/2.png" alt="Detail screen" width="488">
+</div>

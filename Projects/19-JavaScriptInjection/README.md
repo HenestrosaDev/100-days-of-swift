@@ -10,10 +10,10 @@
 | [68](https://www.hackingwithswift.com/100/68) | <ul><li>[Establishing communication](https://www.hackingwithswift.com/read/19/5)</li><li>[Editing multiline text with UITextView](https://www.hackingwithswift.com/read/19/6)</li><li>[Fixing the keyboard: NotificationCenter](https://www.hackingwithswift.com/read/19/7)</li></ul>                                                    |
 | [69](https://www.hackingwithswift.com/100/69) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/19/8)</li><li>[Review for Project 19: JavaScript Injection](https://www.hackingwithswift.com/review/hws/project-19-javascript-injection)</li></ul>                                                                                                                               |
 
-## I've learnt...
+## I Have Learnt...
 
-- Targets (we used it for the Extension)
-- JavaScript injections
+- Targets: In iOS development, a target is a build configuration that specifies the settings and options used to build an app or framework. Each target represents a distinct product that can be built from the same source code. For example, an iOS app might have separate targets for the iPhone and iPad versions of the app, each with their own settings for icons, device orientation, and other properties.. We used it for the `Extension`
+- JavaScript's injections: Refers to the practice of executing arbitrary JavaScript code in the context of a web page that was not originally intended to run that code.
 
 ## Challenges
 
@@ -25,7 +25,9 @@ Taken from [here](https://www.hackingwithswift.com/read/19/8):
 
 ## Screenshots
 
-![Main screen](./Screenshots/1.png)
-![JavaScript console](./Screenshots/2.png)
-![JavaScript executed](./Screenshots/3.png)
-![Challenge 1](./Screenshots/4.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Main screen" width="244">
+  <img src="./Screenshots/2.png" alt="JavaScript console" width="244">
+  <img src="./Screenshots/3.png" alt="JavaScript executed" width="244">
+  <img src="./Screenshots/4.png" alt="Challenge 1" width="244">
+</div>

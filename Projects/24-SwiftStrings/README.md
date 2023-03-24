@@ -9,11 +9,11 @@
 | [80](https://www.hackingwithswift.com/100/80) | <ul><li>[Setting up](https://www.hackingwithswift.com/read/24/1/setting-up)</li><li>[Strings are not arrays](https://www.hackingwithswift.com/read/24/2)</li><li>[Working with strings in Swift](https://www.hackingwithswift.com/read/24/3)</li><li>[Formatting strings with NSAttributedString](https://www.hackingwithswift.com/read/24/4)</li></ul> |
 | [81](https://www.hackingwithswift.com/100/81) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/24/5)</li><li>[Review for Project 24: Swift Strings](https://www.hackingwithswift.com/review/hws/project-24-swift-strings)</li></ul>                                                                                                                                                            |
 
-## I've learnt...
+## I Have Learnt...
 
-- Strings are different from arrays
-- Useful extensions for Strings
-- `NSAttributedString` for formatting strings 
+- Strings are different from arrays. Even though we can loop over them, we can’t read individual letters from the string (`name[3]` is incorrect).
+- Useful extensions for Strings, such as `deletePrefix(_:)`, `deleteSuffix(_:)`, `capitalizeFirst`, containsAny(of:)
+- `NSAttributedString` for formatting strings. 
 
 ## Challenges
 

@@ -10,12 +10,12 @@
 | [37](https://www.hackingwithswift.com/100/37) | <ul><li>[Loading a level and adding button targets](https://www.hackingwithswift.com/read/8/3)</li><li>[It's play time: firstIndex(of:) and joined()](https://www.hackingwithswift.com/read/8/4)</li><li>[Property observers: didSet](https://www.hackingwithswift.com/read/8/5)</li></ul> | 
 | [38](https://www.hackingwithswift.com/100/38) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/8/6/wrap-up)</li><li>[Review for Project 8: 7 Swifty Words](https://www.hackingwithswift.com/review/hws/project-8-7-swifty-words)</li></ul>                                                                                        |
 
-## I've learnt...
+## I Have Learnt...
 
-- `didSet()` use case.
+- `didSet()`: Property observer that allows you to observe and respond to changes in the value of a property. It is defined as a block of code that is executed immediately after the value of a property is set.
 - `enumerated()`: Turns an array into a map. ID is the position and the value is the content.
-- Array's method `joined()`. 
-- `replacingOcurrences()`: Same as `replace()` in Java
+- `joined(separator:)`: Concatenates the elements of a sequence into a single string, using a specified separator between each element. 
+- `replacingOcurrences(of:with:)`: Allows developers to replace all occurrences of a given substring in a string with another string. Same as `replace()` in Java
 - `AutoLayout` fully in code.
 
 ## Challenges
@@ -28,11 +28,13 @@ Taken from [here](https://www.hackingwithswift.com/read/8/6/wrap-up):
 >- [x] ([Day 40](https://www.hackingwithswift.com/read/9/6)) Modify project 8 so that loading and parsing a level takes place in the background. Once you’re done, make sure you update the UI on the main thread!
 >- [x] ([Day 58](https://www.hackingwithswift.com/read/15/5/wrap-up)) Go back to project 8 and make the letter group buttons fade out when they are tapped. We were using the isHidden property, but you'll need to switch to alpha because isHidden is either true or false, it has no animatable values between.
 
-## To do as a personal challenge...
+## To Do as a Personal Challenge...
 
-- [ ] Add more files
+- [ ] Add more levels
 
-## Screennshots
+## Screenshots
 
-![Most recent screen](./Screenshots/1.png)
-![Top rated screen](./Screenshots/2.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Level 1" width="490">
+  <img src="./Screenshots/2.png" alt="Level completed" width="490">
+</div>

@@ -9,14 +9,14 @@
 | [97](https://www.hackingwithswift.com/100/97) | <ul><li>[Setting up](https://www.hackingwithswift.com/read/30/1/setting-up)</li><li>[What are we working with?](https://www.hackingwithswift.com/read/30/2)</li><li>[What can Instruments tell us?](https://www.hackingwithswift.com/read/30/3)</li><li>[Fixing the bugs: slow shadows](https://www.hackingwithswift.com/read/30/4)</li><li>[Fixing the bugs: wasted allocations](https://www.hackingwithswift.com/read/30/5)</li></ul> |
 | [98](https://www.hackingwithswift.com/100/98) | <ul><li>[Fixing the bugs: Running out of memory](https://www.hackingwithswift.com/read/30/6)</li><li>[Wrap up](https://www.hackingwithswift.com/read/30/7/wrap-up)</li><li>[Review for Project 30: Instruments](https://www.hackingwithswift.com/review/hws/project-30-instruments)</li></ul>                                                                                                                                           |
 
-## I've learnt...
+## I Have Learnt...
 
-- Fixing common problems related to cells of UITableView, Core Graphics and image rendering.
+- Fixing common problems related to cells of `UITableView`, Core Graphics and image rendering.
 - Instruments in Xcode, which allows developers to measure various performance metrics of their app, including CPU usage, memory usage, network activity, and more, in real-time. (<key>⌘</key> + <key>I</key>)
 - **Profiling**: The process of measuring the performance of an application or system in order to identify areas of inefficiency and improve its overall performance.
-- Layer shadows
+- Layer shadows are a visual effect that can be added to a layer in iOS. They are created by setting the layer's `shadowColor`, `shadowOffset`, `shadowOpacity`, and `shadowRadius` properties. The `shadowColor` property specifies the color of the shadow, while the `shadowOffset` property specifies the offset of the shadow from the layer. The `shadowOpacity` property specifies the opacity of the shadow, and the `shadowRadius` property specifies the blur radius of the shadow.
 - Core Graphics' `clip()`: Draws things that lie inside the clipping path
-- `UIImage(named:)` caches the image
+- `UIImage(named:)` caches the image.
 
 ## Challenges
 
@@ -28,7 +28,7 @@ Taken from [here](https://www.hackingwithswift.com/read/30/7/wrap-up):
 
 ## Screenshots
 
-<div>
+<div align="center">
   <img src="./Screenshots/1.png" alt="Main screen" width="250">
   <img src="./Screenshots/2.png" alt="Detail screen" width="250">
 </div>

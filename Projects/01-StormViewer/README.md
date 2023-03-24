@@ -11,16 +11,16 @@
 | [18](https://www.hackingwithswift.com/100/18) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/1/6/wrap-up)</li><li>[Review for Project 1: Storm Viewer](https://www.hackingwithswift.com/review/hws/project-1-storm-viewer)</li>                                                                                                                                                                                  |
 
 
-## I've learnt...
+## I Have Learnt...
 
 - `FileManager`
 - Typecasting (using the "as" keyword, same as Kotlin).
-- `ViewControllers`
-- `Storyboards`
-- `Outlets`: Property that is annotated with the symbol IBOutlet and whose value you can set graphically in a .nib/.xib file or a storyboard. @IBOutlet has no special meaning other than "this is connected to something in Interface Builder".
-- `AutoLayout`
-- `UIImageView`
-- Navigation bars, which are the equivalent of Action Bars in Android.
+- `UIViewController`: Manages and coordinates the view hierarchy of an app
+- **Storyboards**: Visual representation of an app's user interface. It allows developers to create and manage multiple screens, or view controllers, in a single file, making it easier to design and maintain complex interfaces.
+- **Outlets**: Property that is annotated with the symbol IBOutlet and whose value you can set graphically in a .nib/.xib file or a storyboard. @IBOutlet has no special meaning other than "this is connected to something in Interface Builder".
+- **AutoLayout**: Allows developers to create user interfaces that can adapt to different screen sizes and orientations. It is a system for defining constraints that determine the position and size of user interface elements, such as views and controls, relative to other elements and the screen.
+- `UIImageView`: A view for displaying images.
+- `UINavigationBar`: The equivalent of ActionBar in Android.
 - `UINavigationController`: Manages a stack of view controllers that can be pushed by us. This view controller stack is what gives us the smooth sliding in and out animation.
 - The use of `try!` to avoid catching the exception in case that we are completely sure that it won't trigger an exception.
 
@@ -38,5 +38,7 @@ Taken from [here](https://www.hackingwithswift.com/read/1/7/wrap-up):
 
 ## Screenshots
 
-![Main screen](./Screenshots/1.png)
-![Picture detail](./Screenshots/2.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Main screen" width="488">
+  <img src="./Screenshots/2.png" alt="Picture detail" width="488">
+</div>

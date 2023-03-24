@@ -9,9 +9,9 @@
 | [92](https://www.hackingwithswift.com/100/92) | <ul><li>[Setting up](https://www.hackingwithswift.com/read/28/1/setting-up)</li><li>[The basic text editor](https://www.hackingwithswift.com/read/28/2)</li><li>[Writing somewhere safe: the iOS keychain](https://www.hackingwithswift.com/read/28/3)</li><li>[Touch to activate: Touch ID, Face ID and LocalAuthentication](https://www.hackingwithswift.com/read/28/4)</li></ul> |
 | [93](https://www.hackingwithswift.com/100/93) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/28/5)</li><li>[Review for Project 28: Secret Swift](https://www.hackingwithswift.com/review/hws/project-28-secret-swift)</li></ul>                                                                                                                                                                                          |
 
-## I've learnt...
+## I Have Learnt...
 
-- Biometric authentication through Face ID and Touch ID using `LocalAuthentication`
+- Biometric authentication through Face ID and Touch ID using `LocalAuthentication`.
 - Keychain access using `KeychainWrapper` library.
 - The Keychain is a secure storage mechanism in iOS that allows us to store sensitive information, such as passwords, authentication tokens, and cryptographic keys, in an encrypted format. The keychain is designed to protect this sensitive information from unauthorized access, both by other apps and by the user.
 
@@ -25,7 +25,9 @@ Taken from [here](https://www.hackingwithswift.com/read/28/5):
 
 ## Screenshots
 
-![Locked screen](./Screenshots/1.png)
-![Password (challenge 2)](./Screenshots/2.png)
-![Secret message](./Screenshots/3.png)
-![Face ID](./Screenshots/4.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Locked screen" width="244">
+  <img src="./Screenshots/2.png" alt="Password (challenge 2)" width="244">
+  <img src="./Screenshots/3.png" alt="Secret message" width="244">
+  <img src="./Screenshots/4.png" alt="Face ID" width="244">
+</div>

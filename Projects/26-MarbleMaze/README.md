@@ -12,9 +12,9 @@ Portal assets under [CC0 License](https://creativecommons.org/publicdomain/zero/
 | [86](https://www.hackingwithswift.com/100/86) | <ul><li>[Tilt to move: CMMotionManager](https://www.hackingwithswift.com/read/26/3)</li><li>[Contacting but not colliding](https://www.hackingwithswift.com/read/26/4)</li></ul>                                   |
 | [87](https://www.hackingwithswift.com/100/87) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/26/5)</li><li>[Review for Project 26: Marble Maze](https://www.hackingwithswift.com/review/hws/project-26-marble-maze)</li></ul>                           |
 
-## I've learnt...
+## I Have Learnt...
 
-- Core Motion: Used in this project to get the input of the accelerometer
+- Core Motion: Framework provided by Apple that enables you to access the motion and environmental sensors on an iOS device. The framework provides access to a range of sensors, including the accelerometer, gyroscope, magnetometer, and barometer. With Core Motion, you can track the movement and orientation of the device, as well as measure the ambient pressure and relative altitude. Used in this project to get the input of the accelerometer
 
 ## Challenges
 
@@ -26,7 +26,7 @@ Taken from [here](https://www.hackingwithswift.com/read/25/5):
 >- [x] When the player finally makes it to the finish marker, nothing happens. What should happen? Well, that's down to you now. You could easily design several new levels and have them progress through.
 >- [x] Add a new block type, such as a teleport that moves the player from one teleport point to the other. Add a new letter type in `loadLevel()`, add another collision type to our enum, then see what you can do.
 
-## To do as a personal challenge...
+## To Do as a Personal Challenge...
 
 - [ ] Add a menu
 - [ ] Add even more levels
@@ -35,8 +35,14 @@ Taken from [here](https://www.hackingwithswift.com/read/25/5):
 
 ## Screenshots
 
-![Level 1](./Screenshots/1.png)
-![Level 2](./Screenshots/2.png)
-![Level 3](./Screenshots/3.png)
-![Level 4](./Screenshots/4.png)
-![Level 5](./Screenshots/5.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Level 1" width="490">
+  <img src="./Screenshots/2.png" alt="Level 2" width="490">
+</div>
+
+<div align="center">
+  <img src="./Screenshots/3.png" alt="Level 3" width="490">
+  <img src="./Screenshots/4.png" alt="Level 4" width="490">
+</div>
+
+<img src="./Screenshots/5.png" alt="Level 5" width="490">

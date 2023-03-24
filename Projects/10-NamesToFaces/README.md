@@ -10,13 +10,13 @@
 | [43](https://www.hackingwithswift.com/100/43) | <ul><li>[Importing photos with UIImagePickerController](https://www.hackingwithswift.com/read/10/4)</li><li>[Custom subclasses of NSObject](https://www.hackingwithswift.com/read/10/5)</li><li>[Connecting up the people](https://www.hackingwithswift.com/read/10/6)</li></ul> | 
 | [44](https://www.hackingwithswift.com/100/44) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/10/7/wrap-up)</li><li>[Review for Project 10: Names To Faces](https://www.hackingwithswift.com/review/hws/project-10-names-to-faces)</li></ul>                                                                           |
 
-## I've learnt...
+## I Have Learnt...
 
-- `UICollectionView`: Like a `RecyclerView` with `CardView` in Android.
-- `UIImagePickerController` for picking images from the gallery.
-- `UUID` (Universal Unique IDentifier)
-- `NSObject` subclasses
-- `fatalError()`
+- `UICollectionView`: Subclass of `UIScrollView` that provides a flexible and customizable way to display a collection of items. Like a `RecyclerView` with `CardView` in Android.
+- `UIImagePickerController`: Allows the user to capture photos and videos using the built-in camera and also to choose existing photos and videos from the user's photo library. It is a subclass of `UINavigationController` and provides a user interface for taking pictures and videos, and for choosing existing media.
+- `UUID` (Universal Unique IDentifier): 128-bit value that is used to uniquely identify an object or entity in a system. In this project, we use it for generating unique filenames
+- `NSObject` subclasses, such as `NSCoding` which defines a standard interface for archiving and unarchiving objects. Fun fact: NS stands for **NeXTSTEP**, the company that Steve Jobs founded after getting kicked out of Apple.
+- `fatalError()`: Causes the app to terminate immediately and generates a runtime error. It is typically used to signal that a specific condition has not been met and that further execution of the app is impossible or unsafe.
 
 ## Challenges
 
@@ -29,6 +29,8 @@ Taken from [here](https://www.hackingwithswift.com/read/10/7/wrap-up):
 
 ## Screenshots
 
-![Most recent screen](./Screenshots/1.png)
-![Top rated screen](./Screenshots/2.png)
-![Day 93 challenge](./Screenshots/3.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Main screen" width="325">
+  <img src="./Screenshots/2.png" alt="Top rated screen" width="325">
+  <img src="./Screenshots/3.png" alt="Day 93 challenge" width="325"> 
+</div>

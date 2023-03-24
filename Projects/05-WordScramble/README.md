@@ -10,14 +10,14 @@
 | [28](https://www.hackingwithswift.com/100/28) | <ul><li>[Prepare for submission: lowercased() and IndexPath](https://www.hackingwithswift.com/read/5/4)</li><li>[Checking for valid answers](https://www.hackingwithswift.com/read/5/5)</li><li>[Or else what?](https://www.hackingwithswift.com/read/5/6)</li></ul>                                                                                                                                                                                                                                                  | 
 | [29](https://www.hackingwithswift.com/100/29) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/5/7/wrap-up)</li><li>[Review for Project 5: Word Scramble](https://www.hackingwithswift.com/review/hws/project-5-word-scramble)</li>                                                                                                                                                                                                                                                                                                                          |
 
-## I've learnt...
+## I Have Learnt...
 
-- Reloading table views
-- Inserting rows
-- Text input in alerts
-- Strings and UTF-16
-- Closures
-- `NSRange`
+- Reloading table views with `reloadData()`.
+- Inserting rows in a `UITableView`.
+- Text input in alerts with `alertController.addTextField()`.
+- Strings and UTF-16, which is necessary for working with strings in Objective-C code.
+- Closures: Self-contained block of code that can be passed around and executed later.
+- `NSRange`: Used to extract a substring from a larger string or perform a search or replace operation within a string.
 
 ## Challenges
 
@@ -31,5 +31,7 @@ Taken from [here](https://www.hackingwithswift.com/read/5/7/wrap-up):
 
 ## Screenshots
 
-![Main screen](./Screenshots/1.png)
-![Detail](./Screenshots/2.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Main screen" width="488">
+  <img src="./Screenshots/2.png" alt="Detail screen" width="488">
+</div>

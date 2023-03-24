@@ -9,9 +9,9 @@
 | [88](https://www.hackingwithswift.com/100/88) | <ul><li>[Setting up](https://www.hackingwithswift.com/read/27/1/setting-up)</li><li>[Creating the sandbox](https://www.hackingwithswift.com/read/27/2)</li><li>[Drawing into a Core Graphics context with UIGraphicsImageRenderer](https://www.hackingwithswift.com/read/27/3)</li><li>[Ellipses and checkerboards](https://www.hackingwithswift.com/read/27/4)</li><li>[Transforms and lines](https://www.hackingwithswift.com/read/27/5)</li><li>[Images and text](https://www.hackingwithswift.com/read/27/6)</li></ul> |
 | [89](https://www.hackingwithswift.com/100/89) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/27/7)</li><li>[Review for Project 27: Core Graphics](https://www.hackingwithswift.com/review/hws/project-27-core-graphics)</li></ul>                                                                                                                                                                                                                                                                                                                               |
 
-## I've learnt...
+## I Have Learnt...
 
-- Core Graphics: Very similar to the HTML5 & JavaScript's Canvas API.  It is responsible for rendering and manipulating 2D graphics, including text, images, shapes, and colors. The framework is written in Objective-C and is part of Apple's Core Frameworks.
+- Core Graphics: Responsible for rendering and manipulating 2D graphics, including text, images, shapes, and colors. The framework is written in Objective-C and is part of Apple's Core Frameworks. Very similar to the HTML5 & JavaScript's Canvas API. 
 - Some common use cases of Core Graphics include drawing custom user interfaces, creating charts and graphs, rendering images, and generating PDF documents. Developers can use Core Graphics to create high-quality, high-performance graphics in their macOS and iOS applications.
 
 ## Challenges
@@ -24,6 +24,9 @@ Taken from [here](https://www.hackingwithswift.com/read/27/7):
 
 ## Screenshots
 
-![Figure](./Screenshots/1.png)
-![Star (challenge 1)](./Screenshots/2.png)
-![Twin text (challenge 2)](./Screenshots/3.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Figure" width="490">
+  <img src="./Screenshots/2.png" alt="Star (challenge 1)" width="490">
+</div>
+
+<img src="./Screenshots/3.png" alt="Twin text (challenge 2)" width="490">

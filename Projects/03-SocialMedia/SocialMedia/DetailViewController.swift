@@ -80,7 +80,7 @@ class DetailViewController: UIViewController {
                 options: .usesLineFragmentOrigin,
                 context: nil
             )
-        }.jpegData(compressionQuality: 0.8)
+        }.``
 
         // activityItems is the data to be shared. selectedItem! will set the name of the file in the
         // sharing pop up, as requested by the challenge of the instructor.

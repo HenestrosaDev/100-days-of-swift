@@ -10,7 +10,7 @@
 | [95](https://www.hackingwithswift.com/100/95) | <ul><li>[Unleash the bananas: SpriteKit texture atlases](https://www.hackingwithswift.com/read/29/4)</li><li>[Destructible terrain: presentScene](https://www.hackingwithswift.com/read/29/5)</li></ul>                                                                                                  | 
 | [96](https://www.hackingwithswift.com/100/96) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/29/6/wrap-up)</li><li>[Review for Project 29: Exploding Monkeys](https://www.hackingwithswift.com/review/hws/project-29-exploding-monkeys)</li></ul>                                                                                             |
 
-## I've learnt...
+## I Have Learnt...
 
 - Texture atlas: Set of pictures that are combined into a single image. It allows SpriteKit to draw lots of images without having to load and unload textures as it effectively just crops the big image as needed.
 - `SKTransition` for navigating to a new scene. 
@@ -19,7 +19,7 @@
 
 ## Challenges
 
-Taken from [here](https://www.hackingwithswift.com/read/10/7/wrap-up):
+Taken from [here](https://www.hackingwithswift.com/read/29/6/wrap-up):
 
 **Note**: I have taken [this repository](https://github.com/clarknt/100-days-of-swift/blob/main/39-Project29/README.md) by GitHub user [clarknt](https://github.com/clarknt) as a reference to complete the 3rd challenge.
 
@@ -27,7 +27,7 @@ Taken from [here](https://www.hackingwithswift.com/read/10/7/wrap-up):
 >- [x] Add Auto Layout rules for the UI components in our storyboard, allowing them to remain positioned neatly regardless of which iPad size is used.
 >- [x] Use the physics world’s gravity to add random wind to each level, making sure to add a label telling players the direction and strength.
 
-## To do as a personal challenge...
+## To Do as a Personal Challenge...
 
 - [x] Restructure the layout to make it more intuitive.
 - [x] Fix bug in iOS 13 >= that causes the banana to not hit the building correctly.
@@ -35,7 +35,12 @@ Taken from [here](https://www.hackingwithswift.com/read/10/7/wrap-up):
 
 ## Screenshots
 
-![Main screen](./Screenshots/1.png)
-![Banana throwing](./Screenshots/2.png)
-![Explosion animation](./Screenshots/3.png)
-![New game (challenge 1)](./Screenshots/4.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Main screen" width="490">
+  <img src="./Screenshots/2.png" alt="Banana throwing" width="490">
+</div>
+
+<div align="center">
+  <img src="./Screenshots/3.png" alt="Explosion animation" width="490">
+  <img src="./Screenshots/4.png" alt="New game (challenge 1)" width="490">
+</div>

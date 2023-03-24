@@ -9,10 +9,10 @@
 | [48](https://www.hackingwithswift.com/100/48) | <ul><li>[Setting up](https://www.hackingwithswift.com/read/12/1/setting-up)</li><li>[Reading and writing basics: UserDefaults](https://www.hackingwithswift.com/read/12/2)</li><li>[Fixing Project 10: NSCoding](https://www.hackingwithswift.com/read/12/3)</li></ul>      |
 | [49](https://www.hackingwithswift.com/100/49) | <ul><li>[Fixing Project 10: Codable](https://www.hackingwithswift.com/read/12/4)</li><li>[Wrap up](https://www.hackingwithswift.com/read/12/5)</li><li>[Review for Project 12: UserDefaults](https://www.hackingwithswift.com/review/hws/project-12-userdefaults)</li></ul> | 
 
-## I've learnt...
+## I Have Learnt...
 
-- `UserDefaults`: Like `SharedPreferences` in Android.
-- `UserDefaults` are not safe because it's not private. Write to the keychain instead for sensible data.
+- `UserDefaults`: A key-value storage system that is built into the Foundation framework and is easy to use and requires no external storage. It's a simple and convenient way to store small amounts of data, such as user preferences, settings, and other application-specific data. Like `SharedPreferences` in Android.
+- `UserDefaults` are not safe because it's not private. Write to the **Keychain** instead for sensible data.
 
 ## Challenges
 

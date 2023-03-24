@@ -9,11 +9,12 @@
 | [72](https://www.hackingwithswift.com/100/72) | <ul><li>[Setting up](https://www.hackingwithswift.com/read/21/1/setting-up)</li><li>[Scheduling notifications: UNUserNotificationCenter and UNNotificationRequest](https://www.hackingwithswift.com/read/21/2)</li><li>[Acting on responses](https://www.hackingwithswift.com/read/21/3)</li></ul> |
 | [73](https://www.hackingwithswift.com/100/73) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/21/4)</li><li>[Review for Project 21: Local Notifications](https://www.hackingwithswift.com/review/hws/project-21-local-notifications)</li></ul>                                                                                           |
 
-## I've learnt...
+## I Have Learnt...
 
-- To send notifications
-- To schedule notifications with `UNTimeIntervalNotificationTrigger` (seconds) and UNCalendarNotificationTrigger (with DateComponents class)
-- To create categories. Very similar to channels in Android.
+- `UNUserNotificationCenter.current().requestAuthorization(options:)`: Requests permission to the user for showing notifications on the lock screen.
+- `UNMutableNotificationContent()`: Set notification's content.
+- `UNTimeIntervalNotificationTrigger` (seconds) and `UNCalendarNotificationTrigger` (with DateComponents class) for scheduling notifications. 
+- To create categories with `notificationContent.categoryIdentifier`. Very similar to channels in Android.
 
 ## Challenges
 
@@ -25,6 +26,8 @@ Taken from [here](https://www.hackingwithswift.com/read/21/4):
 
 ## Screenshots
 
-![Notification permission](./Screenshots/1.png)
-![Notification](./Screenshots/2.png)
-![Notification options](./Screenshots/3.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Notification permission" width="325">
+  <img src="./Screenshots/2.png" alt="Notification" width="325">
+  <img src="./Screenshots/3.png" alt="Notification options" width="325">
+</div>

@@ -11,15 +11,15 @@
 | [26](https://www.hackingwithswift.com/100/26) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/4/6/wrap-up)</li><li>[Review for Project 4: Easy Browser](https://www.hackingwithswift.com/review/hws/project-4-easy-browser)</li>                                                                                                  |
 
 
-## I've learnt...
+## I Have Learnt...
 
 - `loadView()`: `loadView()` + `viewDidLoad()` = `onCreate()` in Android.
-- `WKWebView`
-- Delegation of protocols
-- `URL and `URLRequest` classes
-- `UIToolbar`
-- `UIProgressView`
-- Key-Value observing
+- `WKWebView`: A class in the iOS development framework WebKit that allows developers to embed web content in their apps.
+- Delegation of protocols: Design pattern that allows an object to pass responsibility for a particular task or behavior to another object. In the context of iOS development, delegation is often used with protocols to define a set of methods that a delegate object can implement to customize the behavior of another object.
+- `URL` and `URLRequest` classes for working with network resources.
+- `UIToolbar`: Represents a horizontal bar of buttons or controls that can be added to a view. It's commonly used in conjunction with a UINavigationController to provide a consistent user interface across an app's views. It can contain UIBarButtonItems, custom views, and other controls that can trigger actions when tapped.
+- `UIProgressView`: Displays the progress of a task using a progress bar. 
+- Key-Value observing: Design pattern in iOS development that allows objects to observe changes to the properties of other objects, without having to know the details of how those properties are implemented.
 
 ## Challenges
 
@@ -31,5 +31,7 @@ Taken from [here](https://www.hackingwithswift.com/read/4/6/wrap-up):
 
 ## Screenshots
 
-![Main screen](./Screenshots/1.png)
-![Picture detail](./Screenshots/2.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Main screen" width="488">
+  <img src="./Screenshots/2.png" alt="Picture detail" width="488">
+</div>

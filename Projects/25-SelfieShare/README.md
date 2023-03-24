@@ -9,9 +9,9 @@
 | [83](https://www.hackingwithswift.com/100/83) | <ul><li>[Setting up](https://www.hackingwithswift.com/read/25/1/setting-up)</li><li>[Importing photos again](https://www.hackingwithswift.com/read/25/2)</li><li>[Going peer to peer: MCSession, MCBrowserViewController](https://www.hackingwithswift.com/read/25/3)</li><li>[Invitation only: MCPeerID](https://www.hackingwithswift.com/read/24/5)</li></ul> |
 | [84](https://www.hackingwithswift.com/100/84) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/25/5)</li><li>[Review for Project 25: Selfie Share](https://www.hackingwithswift.com/review/hws/project-25-selfie-share)</li></ul>                                                                                                                                                                      |
 
-## I've learnt...
+## I Have Learnt...
 
-- Multipeer connectivity
+- Multipeer connectivity: Framework provided by Apple that enables communication between iOS, macOS, and tvOS devices over Wi-Fi and Bluetooth. It allows you to create peer-to-peer connections between nearby devices, enabling you to share data, files, and other information between them.
 
 ## Challenges
 
@@ -27,7 +27,9 @@ Taken from [here](https://www.hackingwithswift.com/read/25/5):
 
 ## Screenshots
 
-![Main screen](./Screenshots/1.png)
-![Connected peers](./Screenshots/2.png)
-![Message](./Screenshots/3.png)
-![Connect to others](./Screenshots/4.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Main screen" width="244">
+  <img src="./Screenshots/2.png" alt="Connected peers" width="244">
+  <img src="./Screenshots/3.png" alt="Message" width="244">
+  <img src="./Screenshots/4.png" alt="Connect to others" width="244">
+</div>

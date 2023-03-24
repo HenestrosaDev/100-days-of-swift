@@ -10,12 +10,12 @@
 | [34](https://www.hackingwithswift.com/100/34) | <ul><li>[Rendering a petition: loadHTMLString](https://www.hackingwithswift.com/read/7/4)</li><li>[Finishing touches: didFinishLaunchingWithOptions](https://www.hackingwithswift.com/read/7/5)</li></ul>                                                                        | 
 | [35](https://www.hackingwithswift.com/100/35) | <ul><li>[Wrap up](https://www.hackingwithswift.com/read/7/6/wrap-up)</li><li>[Review for Project 7: Whitehouse Petitions](https://www.hackingwithswift.com/review/hws/project-7-whitehouse-petitions)</li></ul>                                                                  |
 
-## I've learnt...
+## I Have Learnt...
 
 - Downloading JSON with `Data` class.
 - `Codable` and `JSONDecoder`.
 - `UITabBarController`: Same as BottomNavigationBar in Android.
-- `SceneDelegate` to add a `UITabBarController` item by code at the init of the app.
+- Add a `UITabBarController` item by code at the init of the app using the `SceneDelegate`.
 
 ## Challenges
 
@@ -27,7 +27,9 @@ Taken from [here](https://www.hackingwithswift.com/read/7/6/wrap-up):
 
 ## Screenshots
 
-![Most recent screen](./Screenshots/1.png)
-![Top rated screen](./Screenshots/2.png)
-![Detail screen](./Screenshots/3.png)
-![Credits button](./Screenshots/4.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Most recent screen" width="244">
+  <img src="./Screenshots/2.png" alt="Top rated screen" width="244">
+  <img src="./Screenshots/3.png" alt="Detail screen" width="244">
+  <img src="./Screenshots/4.png" alt="Credits button" width="244">
+</div>

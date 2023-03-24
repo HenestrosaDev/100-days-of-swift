@@ -13,10 +13,11 @@
 
 Keep in mind that iBeacons are pretty much dead now, so I basically did this course for completion.
 
-## I've learnt...
+## I Have Learnt...
 
 - iBeacons: Bluetooth-powered microdevices that emit low-energy signals iOS can detect and act on.
-- Ask for location authorization (while in use and always)
+- Ask the user for location access permission.
+- `CLLocationManager().requestAlwaysAuthorization()`: Requests location permission.
 
 ## Challenges
 
@@ -28,5 +29,7 @@ Taken from [here](https://www.hackingwithswift.com/read/22/4):
 
 ## Screenshots
 
-![Notification permission](./Screenshots/1.png)
-![Notification](./Screenshots/2.png)
+<div align="center">
+  <img src="./Screenshots/1.png" alt="Notification permission" width="488">
+  <img src="./Screenshots/2.png" alt="Notification" width="488">
+</div>
