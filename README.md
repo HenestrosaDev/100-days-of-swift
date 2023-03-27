@@ -934,7 +934,7 @@
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/16/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/16/2" target="_blank" rel="noopener">Up and running with MapKit</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/16/3" target="_blank" rel="noopener">Annotations and accessory views</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/16/3" target="_blank" rel="noopener">Annotations and accessory views: <br>MKPinAnnotationView</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -969,7 +969,7 @@
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/17/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/17/2" target="_blank" rel="noopener">Space: the final frontier</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/17/3" target="_blank" rel="noopener">Bring on the enemies</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/17/3" target="_blank" rel="noopener">Bring on the enemies: <br>linearDamping, angularDamping</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/17/4" target="_blank" rel="noopener">Making contact: didBegin()</a></li>
             </ul>
         </td>
@@ -1122,7 +1122,7 @@
         <td>
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/21/1" target="_blank" rel="noopener">Setting up</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/21/2" target="_blank" rel="noopener">Scheduling notifications</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/21/2" target="_blank" rel="noopener">Scheduling notifications: <br>UNUserNotificationsCenter <br> and UNNotificationRequest</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/21/3" target="_blank" rel="noopener">Acting on responses</a></li>
             </ul>
         </td>
@@ -1274,7 +1274,7 @@
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/24/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/24/2" target="_blank" rel="noopener">Importing photos again</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/24/3" target="_blank" rel="noopener">Going peer to peer</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/24/3" target="_blank" rel="noopener">Going peer to peer <br>MCSession, <br>MCBrowserViewController</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/24/4" target="_blank" rel="noopener">Invitation only: MCPeerID</a></li>
             </ul>
         </td>
@@ -1357,7 +1357,7 @@
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/27/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/27/2" target="_blank" rel="noopener">Creating the sandbox</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/27/3" target="_blank" rel="noopener">Drawing into a Core Graphics context</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/27/3" target="_blank" rel="noopener">Drawing into a Core Graphics context<br>with UIGraphicsImageRenderer</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/27/4" target="_blank" rel="noopener">Ellipses and checkerboards</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/27/5" target="_blank" rel="noopener">Transforms and lines</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/27/6" target="_blank" rel="noopener">Images and text</a></li>
@@ -1397,7 +1397,7 @@
                 <li><a href="https://www.hackingwithswift.com/read/28/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/28/2" target="_blank" rel="noopener">The basic text editor</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/28/3" target="_blank" rel="noopener">Writing somewhere safe: the iOS keychain</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/28/4" target="_blank" rel="noopener">Touch to activate</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/28/4" target="_blank" rel="noopener">Touch to activate: <br>Touch ID, FaceID <br> and LocalAuthentication</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
