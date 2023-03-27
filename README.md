@@ -306,7 +306,9 @@
 
 ## Projects
 
-**NOTE**: Click on the project's title to go to the project's code.
+**NOTES**:
+- Click on the project's title to go to the project's code.
+- There are only two screenshots per project in order to not bloat the main README. If you check any project's README, you will probably find more screenshots of that particular project.
 
 ### [1. Country Flags](https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/01-StormViewer)
 
@@ -367,7 +369,7 @@
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/2/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/2/2" target="_blank" rel="noopener">Designing your layout</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/2/3" target="_blank" rel="noopener">Making the basic game work: UIButton and CALayer</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/2/3" target="_blank" rel="noopener">Making the basic game work: <br>UIButton and CALayer</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -380,7 +382,7 @@
         <td>
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/2/4" target="_blank" rel="noopener">Guess which flag: random numbers</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/2/5" target="_blank" rel="noopener">From outlets to actions: creating an IBAction</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/2/5" target="_blank" rel="noopener">From outlets to actions: <br>creating an IBAction</a></li>
             </ul>
         </td>
     </tr>
@@ -416,7 +418,6 @@
             </ul>
         </td>
         <td rowspan="3" align="center">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/03-SocialMedia/Screenshots/1.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/03-SocialMedia/Screenshots/3.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/03-SocialMedia/Screenshots/4.png" width="160">
         </td>
@@ -439,7 +440,7 @@
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/4/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/4/2" target="_blank" rel="noopener">Creating a simple browser with WKWebView</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/4/3" target="_blank" rel="noopener">Choosing a website: UIAlertController action sheets</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/4/3" target="_blank" rel="noopener">Choosing a website: <br>UIAlertController action sheets</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -451,7 +452,7 @@
         <td><a href="https://www.hackingwithswift.com/100/25" target="_blank" rel="noopener">25</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/read/4/4" target="_blank" rel="noopener">Monitoring page loads: UIToolbar and UIProgressView</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/4/4" target="_blank" rel="noopener">Monitoring page loads: <br>UIToolbar and UIProgressView</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/4/5" target="_blank" rel="noopener">Refactoring for the win</a></li>
             </ul>
         </td>
@@ -481,7 +482,7 @@
         <td><a href="https://www.hackingwithswift.com/100/27" target="_blank" rel="noopener">27</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/articles/179/capture-lists-in-swift-whats-the-difference-between-weak-strong-and-unowned-references1" target="_blank" rel="noopener">Capture lists in Swift (unowned, weak and strong)</a></li>
+                <li><a href="https://www.hackingwithswift.com/articles/179/capture-lists-in-swift-whats-the-difference-between-weak-strong-and-unowned-references1" target="_blank" rel="noopener">Capture lists in Swift <br>(unowned, weak and strong)</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/5/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/5/2" target="_blank" rel="noopener">Reading from disk: contentsOfFile</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/5/3" target="_blank" rel="noopener">Pick a word, any word: UIAlertController</a></li>
@@ -496,7 +497,7 @@
         <td><a href="https://www.hackingwithswift.com/100/28" target="_blank" rel="noopener">28</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/read/5/4" target="_blank" rel="noopener">Prepare for submission: lowercased() and IndexPath</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/5/4" target="_blank" rel="noopener">Prepare for submission: <br>lowercased() and IndexPath</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/5/5" target="_blank" rel="noopener">Checking for valid answers</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/5/6" target="_blank" rel="noopener">Or else what?</a></li>
             </ul>
@@ -574,7 +575,6 @@
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/07-WhitehousePetitions/Screenshots/1.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/07-WhitehousePetitions/Screenshots/3.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/07-WhitehousePetitions/Screenshots/4.png" width="160">
         </td>
     </tr>
     <tr>
@@ -617,7 +617,6 @@
         </td>
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/08-SevenSwiftyWords/Screenshots/1.png" width="245">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/08-SevenSwiftyWords/Screenshots/2.png" width="245">
         </td>
     </tr>
     <tr>
@@ -664,7 +663,6 @@
         </td>
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/09-WhitehousePetitionsAsync/Screenshots/1.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/09-WhitehousePetitionsAsync/Screenshots/3.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/09-WhitehousePetitionsAsync/Screenshots/4.png" width="160">
         </td>
     </tr>
@@ -695,7 +693,6 @@
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/10/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/10/2" target="_blank" rel="noopener">Designing UICollectionView cells</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/10/3" target="_blank" rel="noopener">UICollectionView data sources</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -826,7 +823,6 @@
         </td>
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/13-InstaFilter/Screenshots/1.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/13-InstaFilter/Screenshots/2.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/13-InstaFilter/Screenshots/3.png" width="160">
         </td>
     </tr>
@@ -941,7 +937,6 @@
             </ul>
         </td>
         <td rowspan="3" align="center">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/16-CapitalCities/Screenshots/3.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/16-CapitalCities/Screenshots/1.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/16-CapitalCities/Screenshots/2.png" width="160">
         </td>
@@ -1052,10 +1047,6 @@
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/19-JavaScriptInjection/Screenshots/1.png" alt="Main screen" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/19-JavaScriptInjection/Screenshots/2.png" alt="Picture detail" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/19-JavaScriptInjection/Screenshots/3.png" alt="Picture detail" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/19-JavaScriptInjection/Screenshots/4.png" alt="Picture detail" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/19-JavaScriptInjection/Screenshots/5.png" alt="Picture detail" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/19-JavaScriptInjection/Screenshots/6.png" alt="Picture detail" width="160">
         </td>
     </tr>
     <tr>
@@ -1137,7 +1128,6 @@
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/21-LocalNotifications/Screenshots/1.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/21-LocalNotifications/Screenshots/2.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/21-LocalNotifications/Screenshots/3.png" width="160">
         </td>
     </tr>
     <tr>
@@ -1289,7 +1279,6 @@
         </td>
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/25-SelfieShare/Screenshots/2.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/25-SelfieShare/Screenshots/3.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/25-SelfieShare/Screenshots/4.png" width="160">
         </td>
     </tr>
@@ -1324,10 +1313,10 @@
         </td>
         <td rowspan="3" align="center">
             <div align="center">
-                <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/26-MarbleMaze/Screenshots/1.png" width="260">
-                <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/26-MarbleMaze/Screenshots/2.png" width="260">
-                <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/26-MarbleMaze/Screenshots/4.png" width="260">
-                <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/26-MarbleMaze/Screenshots/5.png" width="260">
+                <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/26-MarbleMaze/Screenshots/1.png" width="220">
+                <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/26-MarbleMaze/Screenshots/2.png" width="220">
+                <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/26-MarbleMaze/Screenshots/4.png" width="220">
+                <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/26-MarbleMaze/Screenshots/5.png" width="220">
             </div>
         </td>
     </tr>
@@ -1374,9 +1363,9 @@
             </ul>
         </td>
         <td rowspan="3" align="center">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/27-CoreGraphics/Screenshots/1.png" width="260">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/27-CoreGraphics/Screenshots/2.png" width="260">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/27-CoreGraphics/Screenshots/3.png" width="260">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/27-CoreGraphics/Screenshots/1.png" width="220">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/27-CoreGraphics/Screenshots/2.png" width="220">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/27-CoreGraphics/Screenshots/3.png" width="220">
         </td>
     </tr>
     <tr>
@@ -1412,7 +1401,6 @@
         </td>
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/28-SecretSwift/Screenshots/4.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/28-SecretSwift/Screenshots/2.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/28-SecretSwift/Screenshots/3.png" width="160">
         </td>
     </tr>
@@ -1447,10 +1435,10 @@
             </ul>
         </td>
         <td rowspan="3" align="center">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/29-ExplodingMonkeys/Screenshots/1.png" width="260">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/29-ExplodingMonkeys/Screenshots/2.png" width="260">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/29-ExplodingMonkeys/Screenshots/3.png" width="260">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/29-ExplodingMonkeys/Screenshots/4.png" width="260">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/29-ExplodingMonkeys/Screenshots/1.png" width="220">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/29-ExplodingMonkeys/Screenshots/2.png" width="220">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/29-ExplodingMonkeys/Screenshots/3.png" width="220">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/29-ExplodingMonkeys/Screenshots/4.png" width="220">
         </td>
     </tr>
     <tr>
