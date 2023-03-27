@@ -693,12 +693,12 @@
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/10/1" target="_blank" rel="noopener">Setting up</a></li>
                 <li><a href="https://www.hackingwithswift.com/read/10/2" target="_blank" rel="noopener">Designing UICollectionView cells</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/10/3" target="_blank" rel="noopener">UICollectionView data sources</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/10-NamesToFaces/Screenshots/1.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/10-NamesToFaces/Screenshots/2.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/10-NamesToFaces/Screenshots/3.png" width="160">
         </td>
     </tr>
     <tr>
@@ -788,6 +788,7 @@
         </td>
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/10-NamesToFaces/Screenshots/1.png" width="160">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/10-NamesToFaces/Screenshots/2.png" width="160">
         </td>
     </tr>
     <tr>
@@ -1308,7 +1309,7 @@
         <td>
             <ul>
                 <li><a href="https://www.hackingwithswift.com/read/26/1" target="_blank" rel="noopener">Setting up</a></li>
-                <li><a href="https://www.hackingwithswift.com/read/26/2" target="_blank" rel="noopener">Loading a level: categoryBitMask, collisionBitMask, contactTestBitMask</a></li>
+                <li><a href="https://www.hackingwithswift.com/read/26/2" target="_blank" rel="noopener">Loading a level: <br>categoryBitMask, <br>collisionBitMask, <br>contactTestBitMask</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
