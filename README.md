@@ -12,7 +12,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="docs/icon.png" alt="Logo" width="212" height="128">
+    <img src="Docs/icon.png" alt="Logo" width="212" height="128">
     <p align="center">
         Compilation of all the projects (with challenges) and milestone projects carried out in the 100 Days of Swift course by Paul Hudson.
         <br />
