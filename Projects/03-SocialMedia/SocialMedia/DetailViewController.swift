@@ -57,11 +57,12 @@ class DetailViewController: UIViewController {
      this method written in Swift.
      */
     @objc func shareTapped() {
-        guard let image = imageView.image/*?.jpegData(compressionQuality: 0.8)*/ else {
+        guard let image = imageView.image else {
             print("No image found")
             return
         }
         
+        // Challenge (Day 89)
         let canvasWidth: CGFloat = image.size.width
         let canvasHeight: CGFloat = image.size.height
         
@@ -80,7 +81,8 @@ class DetailViewController: UIViewController {
                 options: .usesLineFragmentOrigin,
                 context: nil
             )
-        }.``
+        }
+        // End of challenge (day 89)
 
         // activityItems is the data to be shared. selectedItem! will set the name of the file in the
         // sharing pop up, as requested by the challenge of the instructor.
