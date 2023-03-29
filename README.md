@@ -60,6 +60,7 @@
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/01-WorldFlags/Screenshots/1.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/01-WorldFlags/Screenshots/2.png" width="160">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/01-WorldFlags/Screenshots/4.png" width="160">
         </td>
     </tr>
 </table>
@@ -86,6 +87,7 @@
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/02-ShoppingList/Screenshots/1.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/02-ShoppingList/Screenshots/2.png" width="160">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/02-ShoppingList/Screenshots/3.png" width="160">
         </td>
     </tr>
 </table>
