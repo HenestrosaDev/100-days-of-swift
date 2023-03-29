@@ -107,7 +107,6 @@ class DetailViewController: UIViewController {
          */
         viewController.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
 
-        // Same as show()
         present(viewController, animated: true)
     }
     
