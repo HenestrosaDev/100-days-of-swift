@@ -38,6 +38,11 @@
     </p>
 </div>
 
+## Notes
+
+- Click on the project's title to go to the project's code.
+- There are only two screenshots per project (with a few exceptions) in order to not bloat the main README. If you check any project's README, you will probably find more screenshots of that particular project.
+
 ## Milestone Projects
 
 ### [1. World Flags](https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/01-WorldFlags)
@@ -307,10 +312,6 @@
 <br>
 
 ## Projects
-
-**NOTES**:
-- Click on the project's title to go to the project's code.
-- There are only two screenshots per project in order to not bloat the main README. If you check any project's README, you will probably find more screenshots of that particular project.
 
 ### [1. Country Flags](https://github.com/HenestrosaConH/100-days-of-swift/blob/main/Projects/01-StormViewer)
 
