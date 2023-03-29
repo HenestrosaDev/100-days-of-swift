@@ -14,6 +14,7 @@
   - Let the users edit an item of the list by tapping on it.
   - Add share option to the `navigationItem`.
   - Add swipe-to-delete functionality for each `tableView`'s row.
+  - Add `PersistenceManager` class to add data persistence to the app.
 
 ## Challenge Instructions
 

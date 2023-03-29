@@ -19,6 +19,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         
         configureViewController()
+        loadItems()
     }
     
     // MARK: - Methods
@@ -44,6 +45,10 @@ class ViewController: UITableViewController {
             target: self,
             action: #selector(didTapTrash)
         )
+    }
+    
+    private func loadItems() {
+        items = PersistenceManager.get(forKey: .shoppingList) as [String]? ?? []
     }
     
     /**
@@ -107,6 +112,7 @@ class ViewController: UITableViewController {
     @objc private func didTapAdd() {
         promptTextfield(title: "Enter shopping list item") { answer in
             self.items.append(answer)
+            PersistenceManager.save(self.items, forKey: .shoppingList)
         }
     }
     
@@ -132,6 +138,7 @@ extension ViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         promptTextfield(title: "Edit shopping list item", item: items[indexPath.row]) { answer in
             self.items[indexPath.row] = answer
+            PersistenceManager.save(self.items, forKey: .shoppingList)
         }
     }
     
@@ -143,6 +150,7 @@ extension ViewController {
         if editingStyle == .delete {
             // Remove the item from the data source
             items.remove(at: indexPath.row)
+            PersistenceManager.save(self.items, forKey: .shoppingList)
 
             // Delete the row from the table view
             tableView.deleteRows(at: [indexPath], with: .fade)
