@@ -27,8 +27,6 @@ class DetailViewController: UIViewController {
         configureTapGestureRecognizer()
         configurePinchGestureRecognizer()
         configurePanGesture()
-        print(imageView.image!.size.width)
-        print(imageView.image!.size.height)
     }
     
     override func viewWillAppear(_ animated: Bool) {
