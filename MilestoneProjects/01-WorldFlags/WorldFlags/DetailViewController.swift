@@ -95,8 +95,6 @@ class DetailViewController: UIViewController {
     }
     
     @objc private func didTapShare() {
-        // activityItems is the data to be shared. selectedItem! will set the name of the file in the
-        // sharing pop up, as requested by the challenge of the instructor.
         let viewController = UIActivityViewController(
             activityItems: [imageView.image!],
             applicationActivities: []
