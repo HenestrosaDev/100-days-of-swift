@@ -108,7 +108,7 @@
         <th>Screenshots</th>
     </tr>
     <tr>
-        <td><a href="https://www.hackingwithswift.com/100/41" target="_blank" rel="noopener">32</a></td>
+        <td><a href="https://www.hackingwithswift.com/100/41" target="_blank" rel="noopener">41</a></td>
         <td>
             <ul>
                 <li><a href="https://www.hackingwithswift.com/guide/3/1" target="_blank" rel="noopener">What you learned</a></li>
