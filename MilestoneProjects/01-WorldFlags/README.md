@@ -1,12 +1,12 @@
 # World Flags
 
-[Milestone project 1](https://www.hackingwithswift.com/guide/1/1) from the [100 Days of Swift course](https://www.hackingwithswift.com/100) by [Hacking With Swift](https://www.hackingwithswift.com/).
+[Milestone project 1](https://www.hackingwithswift.com/guide/2/1) from the [100 Days of Swift course](https://www.hackingwithswift.com/100) by [Hacking With Swift](https://www.hackingwithswift.com/).
 
 ## Contents
 
 |                      Day                      | Contents                                                                                                                                                                                                          |
 |:---------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [23](https://www.hackingwithswift.com/100/23) | <ul><li>[What you learned](https://www.hackingwithswift.com/guide/1/1)</li><li>[Key points](https://www.hackingwithswift.com/guide/1/2)</li><li>[Challenge](https://www.hackingwithswift.com/guide/1/3)</li></ul> |
+| [23](https://www.hackingwithswift.com/100/23) | <ul><li>[What you learned](https://www.hackingwithswift.com/guide/2/1)</li><li>[Key points](https://www.hackingwithswift.com/guide/2/2)</li><li>[Challenge](https://www.hackingwithswift.com/guide/2/3)</li></ul> |
 
 ## Notes
 
@@ -18,7 +18,7 @@
 
 ## Challenge Instructions
 
-*Instructions taken from [here](https://www.hackingwithswift.com/guide/1/3).* 
+*Instructions taken from [here](https://www.hackingwithswift.com/guide/2/3).* 
 
 You have a rudimentary understanding of table views, image views, and navigation controllers, so let’s put them together: your challenge is to create an app that lists various world flags in a table view. When one of them is tapped, slide in a detail view controller that contains an image view, showing the same flag full size. On the detail view controller, add an action button that lets the user share the flag picture and country name using `UIActivityViewController`.
 
@@ -30,7 +30,9 @@ To solve this challenge you’ll need to draw on skills you learned in tutorials
 4. You’ll also need to adjust your storyboard to include the detail view controller, including using Auto Layout to pin its image view correctly.
 5. You will need to use `UIActivityViewController` to share your flag.
 
-### Hints
+As always, I’m going to provide some hints below, but I suggest you try to complete as much of the challenge as you can before reading them.
+
+Hints:
 
 - To load the images from disk you need to use three lines of code: `let fm = FileManager.default`, then `let path = Bundle.main.resourcePath!`, then finally `let items = try! fm.contentsOfDirectory(atPath: path)`.
 - Those lines end up giving you an array of all items in your app’s bundle, but you only want the pictures, so you’ll need to use something like the `hasSuffix()` method.
