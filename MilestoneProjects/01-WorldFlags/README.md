@@ -11,7 +11,7 @@
 ## Notes
 
 - Flag images taken from [here](https://flagicons.lipis.dev/)
-- The following features have been added by me:
+- I have added these additional features to the app:
   - Let the users zoom in and zoom out the image.
   - Change the background color and hide the navigation bar's views when the user taps on the screen in the `DetailViewController`.
   - The app automatically translates the countries' name to any language by using the `localizedString(forRegionCode:)` method. The filenames of the flags' image contain the ISO-3166-2 code of the country, so we can pass it as the argument to said method.
