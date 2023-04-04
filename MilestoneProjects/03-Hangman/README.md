@@ -10,7 +10,7 @@
 
 ## Notes
 
-- Hangman images and inspiration for the game screen design taken from [tavasolireza's Hangman-Game-Flutter](https://github.com/tavasolireza/Hangman-Game-Flutter/tree/master) project repository.
+- Inspiration for the game screen design taken from [tavasolireza's Hangman-Game-Flutter](https://github.com/tavasolireza/Hangman-Game-Flutter/tree/master) project repository.
 - 1212 words available.
 - I have added these additional features to the game:
   - **Max. scores** of the player, which are being saved using `UserDefaults`.
