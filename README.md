@@ -57,9 +57,9 @@
         <td><a href="https://www.hackingwithswift.com/100/23" target="_blank" rel="noopener">23</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/1/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/1/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/1/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/2/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/2/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/2/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -84,9 +84,9 @@
         <td><a href="https://www.hackingwithswift.com/100/32" target="_blank" rel="noopener">32</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/2/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/2/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/2/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/3/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/3/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/3/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -111,16 +111,15 @@
         <td><a href="https://www.hackingwithswift.com/100/41" target="_blank" rel="noopener">41</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/3/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/3/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/3/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/4/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/4/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/4/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/03-Hangman/Screenshots/1.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/03-Hangman/Screenshots/2.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/03-Hangman/Screenshots/3.png" width="160">
-            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/03-Hangman/Screenshots/4.png" width="160">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/02-ShoppingList/Screenshots/1.png" width="160">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/02-ShoppingList/Screenshots/3.png" width="160">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/02-ShoppingList/Screenshots/6.gif" width="160">
         </td>
     </tr>
 </table>
@@ -139,9 +138,9 @@
         <td><a href="https://www.hackingwithswift.com/100/50" target="_blank" rel="noopener">50</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/4/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/4/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/4/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/5/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/5/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/5/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -166,9 +165,9 @@
         <td><a href="https://www.hackingwithswift.com/100/59" target="_blank" rel="noopener">59</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/5/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/5/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/5/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/6/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/6/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/6/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -192,9 +191,9 @@
         <td><a href="https://www.hackingwithswift.com/100/66" target="_blank" rel="noopener">66</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/6/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/6/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/6/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/7/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/7/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/7/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -219,9 +218,9 @@
         <td><a href="https://www.hackingwithswift.com/100/74" target="_blank" rel="noopener">74</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/7/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/7/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/7/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/8/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/8/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/8/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -245,9 +244,9 @@
         <td><a href="https://www.hackingwithswift.com/100/82" target="_blank" rel="noopener">82</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/8/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/8/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/8/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/9/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/9/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/9/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -270,9 +269,9 @@
         <td><a href="https://www.hackingwithswift.com/100/90" target="_blank" rel="noopener">90</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/9/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/9/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/9/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/10/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/10/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/10/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
@@ -296,9 +295,9 @@
         <td><a href="https://www.hackingwithswift.com/100/90" target="_blank" rel="noopener">99</a></td>
         <td>
             <ul>
-                <li><a href="https://www.hackingwithswift.com/guide/9/1" target="_blank" rel="noopener">What you learned</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/9/2" target="_blank" rel="noopener">Key points</a></li>
-                <li><a href="https://www.hackingwithswift.com/guide/9/3" target="_blank" rel="noopener">Challenge</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/11/1" target="_blank" rel="noopener">What you learned</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/11/2" target="_blank" rel="noopener">Key points</a></li>
+                <li><a href="https://www.hackingwithswift.com/guide/11/3" target="_blank" rel="noopener">Challenge</a></li>
             </ul>
         </td>
         <td rowspan="3" align="center">
