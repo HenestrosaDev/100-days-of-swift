@@ -108,7 +108,6 @@ class MainViewController: UIViewController {
         reset()
         wordToPromptIndex += 1
         currentPromptedWord = String(currentWord.unicodeScalars.map { _ in "_" })
-        print(currentWord)
     }
     
     private func saveScore() {
