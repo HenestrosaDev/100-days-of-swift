@@ -7,11 +7,7 @@
 
 import UIKit
 
-/**
- UINavigationControllerDelegate is needed because of the delegate above. This one has two optional
- methods to implement which are not necessary in this case.
- */
-class ViewController: UICollectionViewController, UINavigationControllerDelegate {
+class ViewController: UICollectionViewController {
     
     // MARK: Properties
     
@@ -185,8 +181,12 @@ extension ViewController {
     
 }
 
-// UIImagePickerControllerDelegate tells us when the user chooses an image or cancels the picker
-extension ViewController: UIImagePickerControllerDelegate {
+/**
+ - `UIImagePickerControllerDelegate` tells us when the user chooses an image or cancels the picker.
+ - `UINavigationControllerDelegate` is needed because of `UIImagePickerControllerDelegate`.
+ It has two optional methods to implement which are not necessary in this case.
+ */
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     /**
      Returns when the user selected an image and it's being returned to you. This method needs to
