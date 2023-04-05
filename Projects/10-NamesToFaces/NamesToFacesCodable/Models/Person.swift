@@ -7,5 +7,5 @@
 
 struct Person: Codable {
     var name: String
-    var image: String
+    var imageName: String
 }

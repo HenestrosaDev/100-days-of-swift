@@ -1,11 +1,10 @@
 //
 //  BiometricManager.swift
-//  NamesToFacesNSCoding
+//  NamesToFacesCodable
 //
 //  Created by JC on 5/4/23.
 //
 
-import UIKit
 import LocalAuthentication
 
 class BiometricManager {

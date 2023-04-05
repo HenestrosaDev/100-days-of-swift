@@ -17,21 +17,21 @@ import UIKit
 class Person: NSObject, NSCoding {
 
     var name: String
-    var image: String
+    var imageName: String
     
-    init(name: String, image: String) {
+    init(name: String, imageName: String) {
         self.name = name
-        self.image = image
+        self.imageName = imageName
     }
     
     // NSCoder is responsible for encoding and decoding so it can be used with UserDefaults
     func encode(with coder: NSCoder) {
         coder.encode(name, forKey: "name")
-        coder.encode(image, forKey: "image")
+        coder.encode(imageName, forKey: "imageName")
     }
     
     required init?(coder: NSCoder) {
         name = coder.decodeObject(forKey: "name") as? String ?? ""
-        image = coder.decodeObject(forKey: "image") as? String ?? ""
+        imageName = coder.decodeObject(forKey: "imageName") as? String ?? ""
     }
 }

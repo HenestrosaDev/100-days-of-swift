@@ -96,7 +96,7 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
                 [weak self, weak alertController] _ in
                 
                 guard let self = self, let newName = alertController?.textFields?[0].text else { return }
-                self.people[index] = Person(name: newName, image: person.image)
+                self.people[index] = Person(name: newName, imageName: person.imageName)
                 UserDefaultsManager.save(self.people, forKey: .people)
                 self.collectionView.reloadData()
             })
@@ -165,7 +165,7 @@ extension ViewController {
         
         cell.name.text = person.name
         
-        let path = getDocumentsDirectory().appendingPathComponent(person.image)
+        let path = getDocumentsDirectory().appendingPathComponent(person.imageName)
         cell.imageView.image = UIImage(contentsOfFile: path.path)
         
         cell.imageView.layer.borderColor = UIColor(white: 0, alpha: 0.3).cgColor
@@ -220,7 +220,7 @@ extension ViewController: UIImagePickerControllerDelegate {
             try? jpegData.write(to: imagePath)
         }
         
-        let person = Person(name: "Unknown", image: imageName)
+        let person = Person(name: "Unknown", imageName: imageName)
         people.append(person)
         UserDefaultsManager.save(people, forKey: .people)
         collectionView.reloadData()
