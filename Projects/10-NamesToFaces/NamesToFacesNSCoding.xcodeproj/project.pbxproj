@@ -15,6 +15,8 @@
 		FA12CDC326E1225200CEB6C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA12CDC126E1225200CEB6C1 /* LaunchScreen.storyboard */; };
 		FA12CDCB26E1241A00CEB6C1 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12CDCA26E1241A00CEB6C1 /* PersonCell.swift */; };
 		FA12CDCD26E131D900CEB6C1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12CDCC26E131D900CEB6C1 /* Person.swift */; };
+		FA873B8F29DD8A4200AB4035 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873B8E29DD8A4200AB4035 /* UserDefaultsManager.swift */; };
+		FA873B9529DD933A00AB4035 /* BiometricManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873B9429DD933A00AB4035 /* BiometricManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FA12CDC426E1225200CEB6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA12CDCA26E1241A00CEB6C1 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		FA12CDCC26E131D900CEB6C1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FA873B8E29DD8A4200AB4035 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		FA873B9429DD933A00AB4035 /* BiometricManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,59 @@
 		FA12CDB526E1225000CEB6C1 /* NamesToFacesNSCoding */ = {
 			isa = PBXGroup;
 			children = (
-				FA12CDB626E1225000CEB6C1 /* AppDelegate.swift */,
-				FA12CDB826E1225000CEB6C1 /* SceneDelegate.swift */,
-				FA12CDBA26E1225000CEB6C1 /* ViewController.swift */,
-				FA12CDCC26E131D900CEB6C1 /* Person.swift */,
-				FA12CDBC26E1225000CEB6C1 /* Main.storyboard */,
-				FA12CDCA26E1241A00CEB6C1 /* PersonCell.swift */,
-				FA12CDBF26E1225200CEB6C1 /* Assets.xcassets */,
-				FA12CDC126E1225200CEB6C1 /* LaunchScreen.storyboard */,
-				FA12CDC426E1225200CEB6C1 /* Info.plist */,
+				FA873B9329DD8AA000AB4035 /* ViewControllers */,
+				FA873B9229DD8A8900AB4035 /* Models */,
+				FA873B9129DD8A7500AB4035 /* Views */,
+				FA873B9029DD8A6500AB4035 /* Support */,
+				FA873B8D29DD8A3500AB4035 /* Managers */,
 			);
 			path = NamesToFacesNSCoding;
+			sourceTree = "<group>";
+		};
+		FA873B8D29DD8A3500AB4035 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA873B8E29DD8A4200AB4035 /* UserDefaultsManager.swift */,
+				FA873B9429DD933A00AB4035 /* BiometricManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FA873B9029DD8A6500AB4035 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FA12CDC426E1225200CEB6C1 /* Info.plist */,
+				FA12CDB826E1225000CEB6C1 /* SceneDelegate.swift */,
+				FA12CDB626E1225000CEB6C1 /* AppDelegate.swift */,
+				FA12CDBF26E1225200CEB6C1 /* Assets.xcassets */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		FA873B9129DD8A7500AB4035 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA12CDBC26E1225000CEB6C1 /* Main.storyboard */,
+				FA12CDC126E1225200CEB6C1 /* LaunchScreen.storyboard */,
+				FA12CDCA26E1241A00CEB6C1 /* PersonCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA873B9229DD8A8900AB4035 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA12CDCC26E131D900CEB6C1 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA873B9329DD8AA000AB4035 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA12CDBA26E1225000CEB6C1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +191,9 @@
 			files = (
 				FA12CDCD26E131D900CEB6C1 /* Person.swift in Sources */,
 				FA12CDBB26E1225000CEB6C1 /* ViewController.swift in Sources */,
+				FA873B8F29DD8A4200AB4035 /* UserDefaultsManager.swift in Sources */,
 				FA12CDB726E1225000CEB6C1 /* AppDelegate.swift in Sources */,
+				FA873B9529DD933A00AB4035 /* BiometricManager.swift in Sources */,
 				FA12CDCB26E1241A00CEB6C1 /* PersonCell.swift in Sources */,
 				FA12CDB926E1225000CEB6C1 /* SceneDelegate.swift in Sources */,
 			);
@@ -295,6 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M992YBC7DL;
 				INFOPLIST_FILE = NamesToFacesNSCoding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M992YBC7DL;
 				INFOPLIST_FILE = NamesToFacesNSCoding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

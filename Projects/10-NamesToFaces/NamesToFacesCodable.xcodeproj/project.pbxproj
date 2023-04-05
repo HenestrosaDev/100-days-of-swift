@@ -15,6 +15,8 @@
 		FA12CDC326E1225200CEB6C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA12CDC126E1225200CEB6C1 /* LaunchScreen.storyboard */; };
 		FA12CDCB26E1241A00CEB6C1 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12CDCA26E1241A00CEB6C1 /* PersonCell.swift */; };
 		FA12CDCD26E131D900CEB6C1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12CDCC26E131D900CEB6C1 /* Person.swift */; };
+		FA873B8C29DD804600AB4035 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873B8B29DD804600AB4035 /* UserDefaultsManager.swift */; };
+		FA873B9729DD948E00AB4035 /* BiometricManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873B9629DD948E00AB4035 /* BiometricManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FA12CDC426E1225200CEB6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA12CDCA26E1241A00CEB6C1 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		FA12CDCC26E131D900CEB6C1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FA873B8B29DD804600AB4035 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		FA873B9629DD948E00AB4035 /* BiometricManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,51 @@
 		FA12CDB526E1225000CEB6C1 /* NamesToFacesCodable */ = {
 			isa = PBXGroup;
 			children = (
-				FA12CDB626E1225000CEB6C1 /* AppDelegate.swift */,
-				FA12CDB826E1225000CEB6C1 /* SceneDelegate.swift */,
-				FA12CDBA26E1225000CEB6C1 /* ViewController.swift */,
-				FA12CDCC26E131D900CEB6C1 /* Person.swift */,
-				FA12CDBC26E1225000CEB6C1 /* Main.storyboard */,
-				FA12CDCA26E1241A00CEB6C1 /* PersonCell.swift */,
-				FA12CDBF26E1225200CEB6C1 /* Assets.xcassets */,
-				FA12CDC126E1225200CEB6C1 /* LaunchScreen.storyboard */,
-				FA12CDC426E1225200CEB6C1 /* Info.plist */,
+				FA873B8A29DD803700AB4035 /* Managers */,
+				FA873B8929DD7F6C00AB4035 /* Support */,
+				FA873B8829DD7F5400AB4035 /* Views */,
+				FA873B8729DD7F3E00AB4035 /* Models */,
 			);
 			path = NamesToFacesCodable;
+			sourceTree = "<group>";
+		};
+		FA873B8729DD7F3E00AB4035 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA12CDCC26E131D900CEB6C1 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA873B8829DD7F5400AB4035 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA12CDBA26E1225000CEB6C1 /* ViewController.swift */,
+				FA12CDCA26E1241A00CEB6C1 /* PersonCell.swift */,
+				FA12CDC126E1225200CEB6C1 /* LaunchScreen.storyboard */,
+				FA12CDBC26E1225000CEB6C1 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA873B8929DD7F6C00AB4035 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FA12CDB626E1225000CEB6C1 /* AppDelegate.swift */,
+				FA12CDB826E1225000CEB6C1 /* SceneDelegate.swift */,
+				FA12CDBF26E1225200CEB6C1 /* Assets.xcassets */,
+				FA12CDC426E1225200CEB6C1 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		FA873B8A29DD803700AB4035 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA873B8B29DD804600AB4035 /* UserDefaultsManager.swift */,
+				FA873B9629DD948E00AB4035 /* BiometricManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +183,9 @@
 			files = (
 				FA12CDCD26E131D900CEB6C1 /* Person.swift in Sources */,
 				FA12CDBB26E1225000CEB6C1 /* ViewController.swift in Sources */,
+				FA873B8C29DD804600AB4035 /* UserDefaultsManager.swift in Sources */,
 				FA12CDB726E1225000CEB6C1 /* AppDelegate.swift in Sources */,
+				FA873B9729DD948E00AB4035 /* BiometricManager.swift in Sources */,
 				FA12CDCB26E1241A00CEB6C1 /* PersonCell.swift in Sources */,
 				FA12CDB926E1225000CEB6C1 /* SceneDelegate.swift in Sources */,
 			);

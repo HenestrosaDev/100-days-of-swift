@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import LocalAuthentication
 
 /**
  UINavigationControllerDelegate is needed because of the delegate above. This one has two optional
@@ -16,23 +15,133 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
     
     // MARK: Properties
     
-    var people = [Person]()
+    private var people = [Person]()
 
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureViewController()
+    }
+
+    // MARK: - Methods
+    
+    private func configureViewController() {
         // Day 93 challenge
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Unlock",
             style: .plain,
             target: self,
-            action: #selector(insertBiometricAuthentication)
+            action: #selector(didTapUnlock)
         )
     }
     
-    // MARK: - Overriden Methods
+    @objc private func didTapUnlock() {
+        BiometricManager.insertBiometricAuthentication { [weak self] success in
+            guard let self = self else { return }
+            
+            if success {
+                self.unlockApp()
+            } else {
+                let ac = UIAlertController(
+                    title: "Biometry unavailable",
+                    message: "Your device is not configured for biometric authentication",
+                    preferredStyle: .alert
+                )
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                self.present(ac, animated: true)
+            }
+        }
+    }
+    
+    // Day 93 challenge
+    private func unlockApp() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .add,
+            target: self,
+            action: #selector(addNewPerson)
+        )
+        
+        navigationItem.rightBarButtonItem = nil
+        
+        loadPeople()
+    }
+    
+    private func loadPeople() {
+        guard let people = UserDefaultsManager.get(forKey: .people) as [Person]? else { return }
+        self.people = people
+        collectionView.reloadData()
+    }
+    
+    private func showOptions(person: Person, indexPath: IndexPath) {
+        let index = indexPath.row
+        
+        let alertController = UIAlertController(
+            title: person.name,
+            message: nil,
+            preferredStyle: .actionSheet
+        )
+        
+        alertController.addAction(UIAlertAction(title: "Rename", style: .default) {
+            [weak self] _ in
+            let alertController = UIAlertController(
+                title: "Rename person",
+                message: nil,
+                preferredStyle: .alert
+            )
+            alertController.addTextField()
+            
+            alertController.addAction(UIAlertAction(title: "OK", style: .default) {
+                [weak self, weak alertController] _ in
+                
+                guard let self = self, let newName = alertController?.textFields?[0].text else { return }
+                self.people[index] = Person(name: newName, image: person.image)
+                UserDefaultsManager.save(self.people, forKey: .people)
+                self.collectionView.reloadData()
+            })
+            
+            alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+            self?.present(alertController, animated: true)
+        })
+        
+        alertController.addAction(UIAlertAction(title: "Delete", style: .default) { [weak self] _ in
+            guard let self = self else { return }
+            self.people.remove(at: index)
+            UserDefaultsManager.save(self.people, forKey: .people)
+        })
+                    
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alertController.popoverPresentationController?.barButtonItem = navigationItem.leftBarButtonItem
+        present(alertController, animated: true)
+    }
+    
+    @objc private func addNewPerson() {
+        let picker = UIImagePickerController()
+        
+        // Allows you to crop the image when selecting it, among other things
+        picker.allowsEditing = true
+        
+        // Conforming to the protocol
+        picker.delegate = self
+        
+        if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
+            picker.sourceType = .camera
+        } // else: will take the photo from the gallery
+        
+        present(picker, animated: true)
+    }
+
+    private func getDocumentsDirectory() -> URL {
+        // in: adds that we want the path to be relative to the user's home directory
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+}
+
+// MARK: - Data Source
+extension ViewController {
     
     override func collectionView(
         _ collectionView: UICollectionView,
@@ -72,143 +181,6 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         didSelectItemAt indexPath: IndexPath
     ) {
         showOptions(person: people[indexPath.item], indexPath: indexPath)
-    }
-
-    // MARK: - Private Methods
-    
-    // Day 93 challenge
-    private func unlockApp() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .add,
-            target: self,
-            action: #selector(addNewPerson)
-        )
-        navigationItem.rightBarButtonItem = nil
-        
-        loadImages()
-    }
-    
-    private func loadImages() {
-        let defaults = UserDefaults.standard
-        if let savedPeople = defaults.object(forKey: "people") as? Data {
-            let jsonDecoder = JSONDecoder()
-            
-            do {
-                people = try jsonDecoder.decode([Person].self, from: savedPeople)
-            } catch {
-                print("Failed to load people.")
-            }
-        }
-        
-        collectionView.reloadData()
-    }
-    
-    // Day 93 challenge
-    @objc private func insertBiometricAuthentication() {
-        let context = LAContext()
-        var error: NSError?
-        
-        /**
-         &error => LocalAuthentication framework uses Objective-C (that's why the type of the
-         error variable is NSError). We pass the error argument as a reference to our error
-         variable, which then changes its value inside the canEvaluatePolicy() method. It's similar
-         to inout parameters in Swift.
-         */
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "To access sensible content, you must identify yourself"
-            
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
-                [weak self] success, authenticationError in
-                
-                guard let self = self else { return }
-                
-                DispatchQueue.main.async {
-                    if success {
-                        self.unlockApp()
-                    }
-                }
-            }
-        } else {
-            let ac = UIAlertController(
-                title: "Biometry unavailable",
-                message: "Your device is not configured for biometric authentication",
-                preferredStyle: .alert
-            )
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        }
-    }
-    
-    private func showOptions(person: Person, indexPath: IndexPath) {
-        let alertController = UIAlertController(
-            title: person.name,
-            message: nil,
-            preferredStyle: .actionSheet
-        )
-        
-        alertController.addAction(UIAlertAction(title: "Rename", style: .default) {
-            [weak self] _ in
-            let alertController = UIAlertController(
-                title: "Rename person",
-                message: nil,
-                preferredStyle: .alert
-            )
-            alertController.addTextField()
-            
-            alertController.addAction(UIAlertAction(title: "OK", style: .default) {
-                [weak self, weak alertController] _ in
-                guard let newName = alertController?.textFields?[0].text else { return }
-                person.name = newName
-                self?.save()
-                self?.collectionView.reloadData()
-            })
-            
-            alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-            self?.present(alertController, animated: true)
-        })
-        
-        alertController.addAction(UIAlertAction(title: "Delete", style: .default) {
-            [weak self] _ in
-            self?.collectionView.deleteItems(at: [indexPath])
-            self?.people.remove(at: indexPath.row)
-        })
-                    
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        alertController.popoverPresentationController?.barButtonItem = navigationItem.leftBarButtonItem
-        present(alertController, animated: true)
-    }
-    
-    @objc private func addNewPerson() {
-        let picker = UIImagePickerController()
-        
-        // Allows you to crop the image when selecting it, among other things
-        picker.allowsEditing = true
-        
-        // Conforming to the protocol
-        picker.delegate = self
-        
-        if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
-            picker.sourceType = .camera
-        } // else: will take the photo from the gallery
-        
-        present(picker, animated: true)
-    }
-
-    private func getDocumentsDirectory() -> URL {
-        // in: adds that we want the path to be relative to the user's home directory
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-    
-    private func save() {
-        let jsonEncoder = JSONEncoder()
-        
-        if let savedData = try? jsonEncoder.encode(people) {
-            let defaults = UserDefaults.standard
-            defaults.set(savedData, forKey: "people")
-        } else {
-            fatalError("Encoding error")
-        }
     }
     
 }
@@ -250,7 +222,7 @@ extension ViewController: UIImagePickerControllerDelegate {
         
         let person = Person(name: "Unknown", image: imageName)
         people.append(person)
-        save()
+        UserDefaultsManager.save(people, forKey: .people)
         collectionView.reloadData()
         
         dismiss(animated: true)
