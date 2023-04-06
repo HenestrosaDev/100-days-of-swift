@@ -64,6 +64,7 @@
 		FA12CDB526E1225000CEB6C1 /* NamesToFacesCodable */ = {
 			isa = PBXGroup;
 			children = (
+				FAFF8DEA29DF052A00624231 /* ViewControllers */,
 				FA873B8A29DD803700AB4035 /* Managers */,
 				FA873B8929DD7F6C00AB4035 /* Support */,
 				FA873B8829DD7F5400AB4035 /* Views */,
@@ -83,7 +84,6 @@
 		FA873B8829DD7F5400AB4035 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA12CDBA26E1225000CEB6C1 /* ViewController.swift */,
 				FA12CDCA26E1241A00CEB6C1 /* PersonCell.swift */,
 				FA12CDC126E1225200CEB6C1 /* LaunchScreen.storyboard */,
 				FA12CDBC26E1225000CEB6C1 /* Main.storyboard */,
@@ -109,6 +109,14 @@
 				FA873B9629DD948E00AB4035 /* BiometricManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		FAFF8DEA29DF052A00624231 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA12CDBA26E1225000CEB6C1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
