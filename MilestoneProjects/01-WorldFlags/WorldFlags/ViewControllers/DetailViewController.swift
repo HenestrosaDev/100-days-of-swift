@@ -71,27 +71,17 @@ class DetailViewController: UIViewController {
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         areNavigationBarViewsHidden.toggle()
 
-        if areNavigationBarViewsHidden {
-            // Hide navigation bar items
-            navigationController?.navigationBar.subviews.forEach { subview in
-                subview.isHidden = true
-            }
-
-            // Animate background color change to black
-            UIView.transition(with: view, duration: 0.25, options: .transitionCrossDissolve, animations: {
-                self.view.backgroundColor = .black
-            })
-        } else {
-            // Show navigation bar items
-            navigationController?.navigationBar.subviews.forEach { subview in
-                subview.isHidden = false
-            }
-
-            // Animate background color change to white
-            UIView.transition(with: view, duration: 0.25, options: .transitionCrossDissolve, animations: {
-                self.view.backgroundColor = .white
-            })
+        // Hide navigation bar items
+        navigationController?.navigationBar.subviews.forEach { subview in
+            subview.isHidden = areNavigationBarViewsHidden
         }
+
+        let backgroundColor: UIColor = areNavigationBarViewsHidden ? .black : .white
+
+        // Animate background color change to black
+        UIView.transition(with: view, duration: 0.25, options: .transitionCrossDissolve, animations: {
+            self.view.backgroundColor = backgroundColor
+        })
     }
     
     @objc private func didTapShare() {
