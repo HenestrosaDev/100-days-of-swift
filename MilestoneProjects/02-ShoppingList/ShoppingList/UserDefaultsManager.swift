@@ -11,7 +11,7 @@ enum UserDefaultsKeys: String {
     case shoppingList = "ShoppingList"
 }
 
-class PersistenceManager {
+class UserDefaultsManager {
     
     /**
      Saves an object of the generic type `T` to UserDefaults using the specified key.
