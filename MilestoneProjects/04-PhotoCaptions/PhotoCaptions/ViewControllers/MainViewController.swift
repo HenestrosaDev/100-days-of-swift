@@ -30,6 +30,7 @@ class MainViewController: UITableViewController {
     
     private func configureViewController() {
         title = "Photo Captions"
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add,
@@ -38,6 +39,8 @@ class MainViewController: UITableViewController {
         )
         
         tableView.rowHeight = 95
+        // Set the background color to "Default"
+        tableView.backgroundColor = .systemGroupedBackground
     }
     
     private func loadPhotos() {

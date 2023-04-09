@@ -49,8 +49,7 @@ class DetailViewController: UIViewController {
         
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.rightBarButtonItem = UIBarButtonItem(
-            title: "Caption",
-            style: .plain,
+            barButtonSystemItem: .compose,
             target: self,
             action: #selector(didTapCaption)
         )
