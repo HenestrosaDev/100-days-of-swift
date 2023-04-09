@@ -18,13 +18,20 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "World Flags"
-        tableView.rowHeight = 65
-        
+        configureViewController()
         loadImages()
     }
     
     // MARK: - Methods
+    
+    private func configureViewController() {
+        title = "World Flags"
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+        tableView.rowHeight = 65
+        // Set the background color to "Default"
+        tableView.backgroundColor = .systemGroupedBackground
+    }
     
     private func loadImages() {
         let fm = FileManager.default
