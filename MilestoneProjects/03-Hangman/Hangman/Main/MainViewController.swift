@@ -121,11 +121,9 @@ class MainViewController: UIViewController {
         if scores.count < 3 {
             scores.append(score)
         } else {
-            for (index, score) in scores.enumerated() {
-                if score < self.score {
-                    scores[index] = self.score
-                    break
-                }
+            for (index, score) in scores.enumerated() where score < self.score {
+                scores[index] = self.score
+                break
             }
         }
         
