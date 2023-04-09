@@ -53,5 +53,6 @@
 
 <div align="center">
   <img src="./Screenshots/4.png" alt="Edit action" width="325">
-  <img src="./Screenshots/5.gif" alt="Delete action" width="325">
+  <img src="./Screenshots/5.png" alt="Delete action" width="325">
+  <img src="./Screenshots/6.png" alt="Delete action" width="325">
 </div>

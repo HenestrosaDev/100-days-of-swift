@@ -123,6 +123,12 @@ class ViewController: UITableViewController {
 extension ViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if items.count == 0 {
+            tableView.setEmptyMessage("No Results")
+        } else {
+            tableView.restoreInitialState()
+        }
+        
         return items.count
     }
     

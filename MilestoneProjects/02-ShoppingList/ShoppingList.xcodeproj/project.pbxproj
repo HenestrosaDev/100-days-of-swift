@@ -14,6 +14,7 @@
 		FA790AF729D457B000AAC9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA790AF629D457B000AAC9C9 /* Assets.xcassets */; };
 		FA790AFA29D457B000AAC9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA790AF829D457B000AAC9C9 /* LaunchScreen.storyboard */; };
 		FA790B0229D48DD600AAC9C9 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA790B0129D48DD600AAC9C9 /* UserDefaultsManager.swift */; };
+		FAFF903329E239AC00624231 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF903229E239AC00624231 /* UITableView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FA790AF929D457B000AAC9C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA790AFB29D457B000AAC9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA790B0129D48DD600AAC9C9 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		FAFF903229E239AC00624231 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				FA790AF829D457B000AAC9C9 /* LaunchScreen.storyboard */,
 				FA790AFB29D457B000AAC9C9 /* Info.plist */,
 				FA790B0129D48DD600AAC9C9 /* UserDefaultsManager.swift */,
+				FAFF903229E239AC00624231 /* UITableView+Ext.swift */,
 			);
 			path = ShoppingList;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				FA790AF229D457AF00AAC9C9 /* ViewController.swift in Sources */,
 				FA790AEE29D457AF00AAC9C9 /* AppDelegate.swift in Sources */,
+				FAFF903329E239AC00624231 /* UITableView+Ext.swift in Sources */,
 				FA790AF029D457AF00AAC9C9 /* SceneDelegate.swift in Sources */,
 				FA790B0229D48DD600AAC9C9 /* UserDefaultsManager.swift in Sources */,
 			);
