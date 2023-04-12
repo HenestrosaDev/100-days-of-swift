@@ -10,12 +10,13 @@
 
 ## Notes
 
-- I have added these additional features to the game:
-  - Zoom in and zoom out the image in the `DetailViewController` screen.
-  - Swipe-to-delete functionality for each `tableView`'s row.
-  - `PersistenceManager` class to add data persistence to the app.
-  - Let the user pick the photo from the gallery or the camera.
-  - Share option by long-pressing a row of the `tableView`.
+- I have added these additional features:
+  - Multi-language support of the country list.
+  - Filter countries by using a `UISearchController`.
+  - Read country facts on Wikipedia by pressing the three dots of the `DetailViewController`'s navigation bar.
+  - Share option by pressing the three dots of the `DetailViewController`'s navigation bar.
+  - Copy a specific fact by long-pressing the row.
+  - Haptic feedback support.
 
 ## Challenge Instructions
 
