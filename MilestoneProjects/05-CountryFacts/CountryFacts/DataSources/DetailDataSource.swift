@@ -74,7 +74,7 @@ class DetailDataSource: NSObject {
         
         - \(GeneralSection.officialName.rawValue): \(country.name.common)
         - \(GeneralSection.capital.rawValue): \(capital)
-        - \(GeneralSection.demonym.rawValue): \(country.demonyms)
+        - \(GeneralSection.demonym.rawValue): \(country.demonyms.eng.m)
         - \(GeneralSection.population.rawValue): \(country.population)
         - \(GeneralSection.area.rawValue): \(country.area)
         - \(GeneralSection.callingCode.rawValue): \(callingCode)
