@@ -173,6 +173,7 @@
         <td rowspan="3" align="center">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/05-CountryFacts/Screenshots/1.png" width="160">
             <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/05-CountryFacts/Screenshots/3.png" width="160">
+            <img src="https://github.com/HenestrosaConH/100-days-of-swift/blob/main/MilestoneProjects/05-CountryFacts/Screenshots/7.png" width="160">
         </td>
     </tr>
 </table>
