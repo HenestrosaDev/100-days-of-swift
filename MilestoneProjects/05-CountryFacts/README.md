@@ -10,6 +10,7 @@
 
 ## Notes
 
+- API used: [restcountries.com](https://restcountries.com/#rest-countries)
 - I have added these additional features:
   - Multi-language support of the country list.
   - Filter countries by using a `UISearchController`.
