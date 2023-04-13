@@ -51,4 +51,5 @@
 
 <div align="center">
   <img src="./Screenshots/7.png" alt="Read on Wikipedia" width="325">
+  <img src="./Screenshots/8.png" alt="Ahre text" width="325">
 </div>
