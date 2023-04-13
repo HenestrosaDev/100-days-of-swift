@@ -41,7 +41,7 @@
 ## Notes
 
 - Click on the project's title to go to the project's code.
-- There are only two screenshots per project (with a few exceptions) in order to not bloat the main README. If you check any project's README, you will probably find more screenshots of that particular project.
+- If you want to see more screenshots of a particular project, check the project's README.
 
 ## Milestone Projects
 
